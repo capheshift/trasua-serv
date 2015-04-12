@@ -1,13 +1,10 @@
-<h4 class="header">LOGIN</h4>
+{{!-- <h4>Profile/Edit</h4> --}}
 <form class="form-horizontal">
   <fieldset>
 
-  <!-- Form Name -->
-  {{!-- <legend>Form Name</legend> --}}
-
   <!-- Text input-->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="label-email">Email</label>
+    <label class="col-md-4 control-label" for="label-email">Phone Number</label>
     <div class="col-md-6">
       <input id="label-email" name="label-email" type="text" placeholder="" class="form-control input-md" required="">
     </div>
@@ -15,7 +12,7 @@
 
   <!-- Password input-->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="label-passwordinput">Password</label>
+    <label class="col-md-4 control-label" for="label-passwordinput">Skype</label>
     <div class="col-md-6">
       <input id="label-passwordinput" name="label-passwordinput" type="password" placeholder="" class="form-control input-md" required="">
     </div>
@@ -25,13 +22,13 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="btn-login"></label>
     <div class="col-md-8">
-      <button id="btn-login" name="btn-login" class="btn btn-success">Login</button>
-      <button id="btn-register" name="btn-register" class="btn btn-default">Register</button>
+      <button id="btn-login" name="btn-login" class="btn btn-success">Save</button>
+      {{!-- <button id="btn-register" name="btn-register" class="btn btn-default">Cancel</button> --}}
+      {{link-to 'Cancel' 'profile' class='btn btn-default'}}
     </div>
   </div>
 
   </fieldset>
 </form>
-
 
 {{outlet}}

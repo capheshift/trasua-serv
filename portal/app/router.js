@@ -11,8 +11,14 @@ Router.map(function() {
   this.route('register');
   this.route('feed', function() {
     this.route('detail');
+    this.route('new');
   });
   this.route('hookup');
+  this.route('setting');
+  this.route('about');
+  this.route('profile', function() {
+    this.route('edit');
+  });
 });
 
 export default Router;
