@@ -1,2 +1,50 @@
 <h4 class="header">PROFILE</h4>
-{{link-to 'Edit' 'profile.edit' class='btn btn-primary'}}
+
+<form class="form-horizontal">
+  <fieldset>
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="full-name">Full Name</label>
+    <div class="col-md-6">
+    <input id="full-name" name="full-name" type="text" placeholder="" class="form-control input-md">
+
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="email">Email</label>
+    <div class="col-md-6">
+    <input id="email" name="email" type="text" placeholder="" class="form-control input-md">
+
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="phone-number">Phone Number</label>
+    <div class="col-md-6">
+    <input id="phone-number" name="phone-number" type="text" placeholder="" class="form-control input-md">
+
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="skype">Skype</label>
+    <div class="col-md-6">
+    <input id="skype" name="skype" type="text" placeholder="" class="form-control input-md">
+
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="edit"></label>
+    <div class="col-md-4 pull-right">
+      {{link-to 'Edit contact' 'profile.edit' class='btn btn-success'}}
+    </div>
+  </div>
+
+  </fieldset>
+</form>
