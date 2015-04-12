@@ -1,0 +1,37 @@
+<p>Login</p>
+<form class="form-horizontal">
+  <fieldset>
+
+  <!-- Form Name -->
+  {{!-- <legend>Form Name</legend> --}}
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="label-email">Email</label>
+    <div class="col-md-6">
+      <input id="label-email" name="label-email" type="text" placeholder="" class="form-control input-md" required="">
+    </div>
+  </div>
+
+  <!-- Password input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="label-passwordinput">Password</label>
+    <div class="col-md-6">
+      <input id="label-passwordinput" name="label-passwordinput" type="password" placeholder="" class="form-control input-md" required="">
+    </div>
+  </div>
+
+  <!-- Button (Double) -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="btn-login"></label>
+    <div class="col-md-8">
+      <button id="btn-login" name="btn-login" class="btn btn-success">Login</button>
+      <button id="btn-register" name="btn-register" class="btn btn-default">Register</button>
+    </div>
+  </div>
+
+  </fieldset>
+</form>
+
+
+{{outlet}}
