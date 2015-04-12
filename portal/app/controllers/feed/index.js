@@ -7,7 +7,9 @@ export default Ember.Controller.extend({
   },
   actions: {
     navToDetail: function () {
-      this.container.lookup('adapter:feed').getAll();
+      this.container.lookup('adapter:feed').getAll().then(function(data){
+        console.log(data);
+      });
       this.transitionToRoute('feed.detail');
     }
   }

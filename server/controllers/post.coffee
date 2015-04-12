@@ -17,8 +17,19 @@ getById = (req, res) ->
 
 getAll = (req, res) ->
   console.log 'controller/getAll'
-  PostBLL.getAll().then (data) ->
-    res.send data
+  data = [
+    {
+      love: 'love',
+      fuck: 'fuck'
+    },
+    {
+      love: 'love',
+      fuck: 'fuck'
+    }
+  ]
+  res.send data
+  # PostBLL.getAll().then (data) ->
+  #   res.send data
 
 getByLocation = (req, res) ->
   PostBLL.getByLocation(40.689604, -74.04455, 0.5).then (data) ->
