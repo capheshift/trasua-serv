@@ -18,7 +18,7 @@ PostSchema = new Schema
   longitude:
     type: Number
 
-  locationData:
+  coords:
     type: Schema.Types.Mixed
 
   createdDate:

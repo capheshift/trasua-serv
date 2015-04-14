@@ -10,3 +10,7 @@ label {
   font-weight: normal;
   font-size: 0.9em;
 }
+
+.feed-detail .profile label {
+  font-size: 11px;
+}

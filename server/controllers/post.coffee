@@ -4,12 +4,13 @@ PostBLL = require '../business/post'
 
 create = (req, res) ->
   data = req.body
-  PostBLL.create(data).then ->
-    res.send 'created'
+  console.log 'controller/create', data
+
+  PostBLL.create(data).then (data) ->
+    res.send data
 
 getById = (req, res) ->
-  console.log 'controller/getById'
-  console.log req.query.id
+  console.log 'controller/getById', req.query.id
 
   id = req.query.id
   PostBLL.getById(id).then (data) ->
@@ -17,24 +18,12 @@ getById = (req, res) ->
 
 getAll = (req, res) ->
   console.log 'controller/getAll'
-  data = [
-    {
-      love: 'love',
-      fuck: 'fuck'
-    },
-    {
-      love: 'love',
-      fuck: 'fuck'
-    }
-  ]
-  res.send data
-  # PostBLL.getAll().then (data) ->
-  #   res.send data
+  PostBLL.getAll().then (data) ->
+    res.send data || []
 
 getByLocation = (req, res) ->
   PostBLL.getByLocation(40.689604, -74.04455, 0.5).then (data) ->
     res.send data
-
 
 module.exports = (app) ->
   app.post '/post/create', create

@@ -9,11 +9,11 @@ apiList = [
   { name: 'create', path: 'post/create', method: 'POST'}];
 
 // create functions with each api link
-$.each(apiList, function(index, item) {
+jQuery.each(apiList, function(index, item) {
   result[item.name] = function(params) {
     // in this case, 'this' is a object was referenced from Adapter
-    console.log(this.url + item.path);
-    return this.ajax(this.url + item.path, item.method, params || {});
+    console.log(this.url + item.path, params);
+    return this.ajax(this.url + item.path, item.method, params);
   };
 });
 
