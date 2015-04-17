@@ -1,10 +1,14 @@
-<h4 class="header">LOGIN</h4>
-<form class="form-horizontal">
+{{!-- <h4 class="header">LOGIN</h4> --}}
+
+<div style="margin-top: 150px">
+  {{link-to 'Login by facebook' 'feed' class='btn btn-success btn-block'}}
+</div>
+
+<h6 style="text-align: center">Let get your partner</h6>
+
+
+{{!-- <form class="form-horizontal">
   <fieldset>
-
-  <!-- Form Name -->
-  {{!-- <legend>Form Name</legend> --}}
-
   <!-- Text input-->
   <div class="form-group">
     <label class="col-md-4 control-label" for="label-email">Email</label>
@@ -29,9 +33,8 @@
       <button id="btn-register" name="btn-register" class="btn btn-default">Register</button>
     </div>
   </div>
-
   </fieldset>
-</form>
+</form> --}}
 
 
 {{outlet}}

@@ -1,15 +1,24 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  model: function() {
-    this.feedAdapter.getAll();
-    return null;
+  init: function() {
+    var feedApi = this.container.lookup('adapter:feed'),
+      $this = this,
+      modelData = {};
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+      // set location first
+      modelData.latitude = position.coords.latitude;
+      modelData.longitude = position.coords.longitude;
+
+      feedApi.getByLocation(modelData).then(function(data) {
+        $this.set('model', data);
+      });
+
+    });
   },
   actions: {
     navToDetail: function () {
-      this.container.lookup('adapter:feed').getAll().then(function(data){
-        console.log(data);
-      });
       this.transitionToRoute('feed.detail');
     }
   }
