@@ -1,5 +1,6 @@
 'use strict'
 
+debug = require('debug')('comment-controller')
 CommentBLL = require '../business/comment'
 
 create = (req, res) ->

@@ -1,5 +1,6 @@
 'use strict'
 
+debug = require('debug')('post-bll')
 GeoPoint = require 'geopoint'
 PostModel = require '../models/post'
 
@@ -24,15 +25,15 @@ countAll = (type) ->
 
 getByLocation = (lat, lon, distance) ->
   curLocation = new GeoPoint(lat, lon)
-  bounding = curLocation.boundingCoordinates(0.5, 0, true)
+  bounding = curLocation.boundingCoordinates(distance, true)
   area =
     sw: bounding[0]
     ne: bounding[1]
 
-  console.log 'bounding', bounding
+  debug 'bounding', bounding
   return PostModel.find({})
-    # .where('latitude').gt(area.ne._degLat).lt(area.sw._degLat)
-    # .where('longitude').gt(area.sw._degLon).lt(area.ne._degLon)
+    .where('latitude').gt(area.sw._degLat).lt(area.ne._degLat)
+    .where('longitude').gt(area.sw._degLon).lt(area.ne._degLon)
     .exec()
 
 

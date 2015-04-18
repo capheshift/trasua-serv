@@ -1,31 +1,33 @@
 'use strict'
 
+debug = require('debug')('post-controller')
 PostBLL = require '../business/post'
 
 create = (req, res) ->
   data = req.body
-  console.log 'controller/create', data
+  debug 'controller/create', data
 
   PostBLL.create(data).then (data) ->
     res.send data
 
 getById = (req, res) ->
-  console.log 'controller/getById', req.query.id
+  debug 'controller/getById', req.query.id
 
   id = req.query.id
   PostBLL.getById(id).then (data) ->
     res.send data
 
 getAll = (req, res) ->
-  console.log 'controller/getAll'
+  debug 'controller/getAll'
   PostBLL.getAll().then (data) ->
     res.send data || []
 
 getByLocation = (req, res) ->
   q = req.query
-  console.log 'getByLocation', q
-  PostBLL.getByLocation(parseInt(q.latitude), parseInt(q.longitude), 2).then (data) ->
-    console.log 'getByLocation', data
+  q.lat = parseFloat(q.latitude)
+  q.lon = parseFloat(q.longitude)
+  debug 'getByLocation', q
+  PostBLL.getByLocation(q.lat, q.lon, 0.5).then (data) ->
     res.send data
   , (err) ->
     res.send

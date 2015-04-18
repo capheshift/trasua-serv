@@ -1,5 +1,6 @@
 'use strict'
 
+debug = require('debug')('user-bll')
 User = require '../models/user'
 
 create = (data) ->

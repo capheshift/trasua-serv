@@ -8,10 +8,14 @@ app.import('bower_components/bootstrap/dist/css/bootstrap.css');
 app.import('vendor/startbootstrap-creative/font-awesome/css/font-awesome.min.css');
 app.import('vendor/startbootstrap-creative/css/animate.min.css');
 app.import('vendor/startbootstrap-creative/css/creative.css');
+app.import('vendor/ember-animated-outlet/dist/ember-animated-outlet.css');
 
 // app.import('vendor/startbootstrap-creative/js/jquery.js');
-app.import('bower_components/bootstrap/dist/js/bootstrap.js');
 // app.import('vendor/startbootstrap-creative/js/bootstrap.min.js');
+// app.import('vendor/handlebars-v3.0.1.js');
+// app.import('vendor/ember-animated-outlet/dist/ember-animated-outlet.js');
+
+app.import('bower_components/bootstrap/dist/js/bootstrap.js');
 app.import('vendor/startbootstrap-creative/js/jquery.easing.min.js');
 app.import('vendor/startbootstrap-creative/js/jquery.fittext.js');
 app.import('vendor/startbootstrap-creative/js/wow.min.js');

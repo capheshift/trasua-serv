@@ -1,5 +1,6 @@
 'use strict'
 
+debug = require('debug')('user-controller')
 UserBLL = require '../business/user'
 
 create = (req, res) ->

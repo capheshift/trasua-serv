@@ -1,5 +1,6 @@
 'use strict'
 
+debug = require('debug')('commemt-bll')
 Comment = require '../models/comment'
 
 create = (data) ->
