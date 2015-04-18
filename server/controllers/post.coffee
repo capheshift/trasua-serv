@@ -22,8 +22,14 @@ getAll = (req, res) ->
     res.send data || []
 
 getByLocation = (req, res) ->
-  PostBLL.getByLocation(40.689604, -74.04455, 0.5).then (data) ->
+  q = req.query
+  console.log 'getByLocation', q
+  PostBLL.getByLocation(parseInt(q.latitude), parseInt(q.longitude), 2).then (data) ->
+    console.log 'getByLocation', data
     res.send data
+  , (err) ->
+    res.send
+      err: err
 
 module.exports = (app) ->
   app.post '/post/create', create
