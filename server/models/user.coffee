@@ -33,6 +33,9 @@ UserSchema = new Schema
     type: Date
     default: Date.now
 
-UserSchema.plugin passportLocal
+UserSchema.plugin passportLocal, {
+  usernameField: 'userName',
+  usernameLowerCase: true
+}
 
 module.exports = mongooes.model 'User', UserSchema
