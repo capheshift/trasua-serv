@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   model: {},
-  content: 'ppp',
   init: function() {
     var m = this.get('model'),
       $this = this;
@@ -20,7 +19,10 @@ export default Ember.Controller.extend({
         model = this.get('model'),
         $this = this;
 
+      $this.set('model.inFlight', true);
       feedApi.create(model).then(function(data) {
+        $this.set('model.inFlight', false);
+        $this.set('model.content', '');
         $this.transitionToRoute('feed');
       })
     }

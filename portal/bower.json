@@ -2,6 +2,7 @@
   "name": "portal",
   "dependencies": {
     "jquery": "^1.11.1",
+    "handlebars": "3.0.0",
     "ember": "1.10.0",
     "ember-data": "1.0.0-beta.15",
     "ember-resolver": "~0.1.12",
@@ -12,6 +13,7 @@
     "ember-qunit": "0.2.8",
     "ember-qunit-notifications": "0.0.7",
     "qunit": "~1.17.1",
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "spin.js": "~2.0.2"
   }
 }

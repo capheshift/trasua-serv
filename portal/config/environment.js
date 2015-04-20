@@ -20,7 +20,20 @@ module.exports = function(environment) {
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
       'style-src': "'self' 'unsafe-inline' fonts.googleapis.com"
     },
-
+    torii: {
+      // a 'session' property will be injected on routes and controllers
+      sessionServiceName: 'session',
+      providers: {
+        'facebook-connect': {
+          appId: '209715572476105',
+          scope: 'email,user_birthday'
+        },
+        'facebook-oauth2': {
+          apiKey: '209715572476105',
+          redirectUri: 'http://localhost:4200' // default is the current URL
+        }
+      }
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

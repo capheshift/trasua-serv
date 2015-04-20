@@ -26,8 +26,11 @@
     <label class="col-md-4 control-label" for="btn-publish"></label>
     <div class="col-md-8 pull-right">
       {{link-to 'Cancel' 'feed' class="btn btn-default"}}
-      <button id="btn-publish" name="btn-publish"
-        class="btn btn-success" {{action 'create'}}>Want a Hook</button>
+      {{!-- <button id="btn-publish" name="btn-publish"
+        class="btn btn-success" {{action 'create'}}>Want a Hook</button> --}}
+
+      {{#spin-button action='create' inFlightBinding='inFlight'
+        buttonStyle='zoom-in' class='btn btn-success'}}Want a Hook{{/spin-button}}
     </div>
   </div>
   </fieldset>

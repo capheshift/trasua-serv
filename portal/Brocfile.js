@@ -12,8 +12,11 @@ app.import('vendor/ember-animated-outlet/dist/ember-animated-outlet.css');
 
 // app.import('vendor/startbootstrap-creative/js/jquery.js');
 // app.import('vendor/startbootstrap-creative/js/bootstrap.min.js');
+
+// app.import('bower_components/jquery/dist/jquery.js');
 // app.import('vendor/handlebars-v3.0.1.js');
-// app.import('vendor/ember-animated-outlet/dist/ember-animated-outlet.js');
+// app.import('bower_components/ember/ember.js');
+app.import('vendor/ember-animated-outlet/dist/ember-animated-outlet.js');
 
 app.import('bower_components/bootstrap/dist/js/bootstrap.js');
 app.import('vendor/startbootstrap-creative/js/jquery.easing.min.js');

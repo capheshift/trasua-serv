@@ -34,6 +34,7 @@ getByLocation = (lat, lon, distance) ->
   return PostModel.find({})
     .where('latitude').gt(area.sw._degLat).lt(area.ne._degLat)
     .where('longitude').gt(area.sw._degLon).lt(area.ne._degLon)
+    .sort('-createdDate')
     .exec()
 
 

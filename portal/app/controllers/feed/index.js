@@ -1,20 +1,33 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  dataModel: {},
+
+  updateData: function() {
+    var feedApi = this.container.lookup('adapter:feed'),
+      model = this.get('dataModel'),
+      $this = this;
+
+    // if request data is valid
+    if (model.latitude && model.longitude){
+      feedApi.getByLocation(model).then(function(data) {
+        $this.set('model', data);
+      });
+    }
+  },
+
   init: function() {
     var feedApi = this.container.lookup('adapter:feed'),
       $this = this,
-      modelData = {};
+      dataModel = {};
 
     navigator.geolocation.getCurrentPosition(function(position) {
       // set location first
-      modelData.latitude = position.coords.latitude;
-      modelData.longitude = position.coords.longitude;
+      dataModel.latitude = position.coords.latitude;
+      dataModel.longitude = position.coords.longitude;
 
-      feedApi.getByLocation(modelData).then(function(data) {
-        $this.set('model', data);
-      });
-
+      $this.set('dataModel', dataModel);
+      $this.updateData();
     });
   },
   actions: {
