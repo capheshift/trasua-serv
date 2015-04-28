@@ -1,5 +1,17 @@
 @import "spin-button";
 
+@viewport
+{
+  width:320px;
+}
+
+@-ms-viewport {
+  width:320px;
+  zoom-user:fixed;
+  max-zoom:1;
+  min-zoom:1;
+}
+
 .main {
   padding: 65px 15px 15px 15px;
 }
