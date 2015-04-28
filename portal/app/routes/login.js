@@ -3,27 +3,27 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   actions: {
     loginByFacebook: function(){
-      var $this = this;
+      var $this = this,
+        fbAdapter = this.container.lookup('adapter:openfb');
 
-      // this.set('model.inFlight', true);
-      this.get('torii').open('facebook-connect').then(function(authorization){
-
-        FB.api('/me', function(response) {
-          console.log(response);
-          // this.set('model.inFlight', false);
-          $this.transitionTo('feed');
-        });
-      });
-
-      // this.get('session').open('facebook-oauth2').then(function(){
-      //   FB.api('/me', function(response){
-      //     console.log(response);
-      //     $this.transitionTo('feed');
+      // $this.transitionTo('profile');
+      $this.transitionTo('profile.add-info');
+      // try {
+      //   fbAdapter.login().then(function(res) {
+      //     console.log(res);
+      //     // return fbAdapter.getUserData();
+      //     return fbAdapter.postToFeed({message: 'Hookup: get your partner n enjoy your live'});
+      //   }).then(function(user) {
+      //     console.log(user);
+      //     $this.transitionTo('profile.add-info');
+      //   }, function(err) {
+      //     alert('LOGIN ' + JSON.stringify(err));
+      //     $this.transitionTo('profile.add-info');
       //   });
-      // }, function(error){
-      //   // controller.set('error', 'Could not sign you in: '+error.message);
-      //   console.log('error', error.message);
-      // });
+      // }
+      // catch(err) {
+      //   alert('CATCH ' + JSON.stringify(err));
+      // }
     }
   }
 });

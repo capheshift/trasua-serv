@@ -12,6 +12,10 @@ PostSchema = new Schema
   content:
     type: String
 
+  phoneNumber:
+    type: String
+    default: 'Không xác định'
+
   latitude:
     type: Number
 

@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   actions: {
-    cancel: function(){
+    publish: function() {
       this.transitionTo('feed');
     }
   }

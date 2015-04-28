@@ -26,4 +26,4 @@ passport.deserializeUser User.deserializeUser()
 mongoose.connect 'mongodb://localhost/sanji'
 
 app.listen 4201
-console.log 'Listening on port 3000...'
+console.log 'Listening on port 4201...'

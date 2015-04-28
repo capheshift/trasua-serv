@@ -6,5 +6,10 @@ export default Ember.Route.extend({
     var controller = this.controllerFor('feed.index');
 
     controller.updateData();
+  },
+  actions: {
+    toNew: function(){
+      this.transitionTo('feed.new');
+    }
   }
 });

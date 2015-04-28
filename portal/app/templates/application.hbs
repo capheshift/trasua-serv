@@ -15,6 +15,9 @@
     <div class="collapse navbar-collapse nav-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li>
+          {{link-to 'Feed' 'feed'}}
+        </li>
+        <li>
           {{link-to 'Profile' 'profile'}}
         </li>
         <li>
@@ -28,6 +31,7 @@
 </nav>
 
 <div class="main">
-  {{outlet}}
+  {{liquid-outlet}}
+  {{!-- {{outlet}} --}}
   {{!-- {{animated-outlet name='main'}} --}}
 </div>

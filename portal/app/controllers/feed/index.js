@@ -2,16 +2,18 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   dataModel: {},
-
+  inFlight: null,
   updateData: function() {
     var feedApi = this.container.lookup('adapter:feed'),
       model = this.get('dataModel'),
       $this = this;
 
+    this.set('inFlight', true);
     // if request data is valid
     if (model.latitude && model.longitude){
       feedApi.getByLocation(model).then(function(data) {
         $this.set('model', data);
+        $this.set('inFlight', null);
       });
     }
   },

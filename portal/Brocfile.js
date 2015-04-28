@@ -17,12 +17,12 @@ app.import('vendor/ember-animated-outlet/dist/ember-animated-outlet.css');
 // app.import('vendor/handlebars-v3.0.1.js');
 // app.import('bower_components/ember/ember.js');
 app.import('vendor/ember-animated-outlet/dist/ember-animated-outlet.js');
-
 app.import('bower_components/bootstrap/dist/js/bootstrap.js');
 app.import('vendor/startbootstrap-creative/js/jquery.easing.min.js');
 app.import('vendor/startbootstrap-creative/js/jquery.fittext.js');
 app.import('vendor/startbootstrap-creative/js/wow.min.js');
 app.import('vendor/startbootstrap-creative/js/creative.js');
+app.import('vendor/OpenFB/openfb.js');
 
 // Use `app.import` to add additional libraries to the generated
 // output files.

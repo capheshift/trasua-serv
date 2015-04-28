@@ -18,6 +18,7 @@ Router.map(function() {
   this.route('about');
   this.route('profile', function() {
     this.route('edit');
+    this.route('add-info');
   });
 });
 

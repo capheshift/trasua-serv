@@ -4,8 +4,9 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'portal',
     environment: environment,
-    baseURL: '/',
+    // baseURL: '/',
     locationType: 'auto',
+    // locationType: 'none',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -14,11 +15,11 @@ module.exports = function(environment) {
     },
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'connect-src': "'self' localhost",
-      'font-src': "'self' data: fonts.gstatic.com",
-      'img-src': "'self'",
-      'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
-      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com"
+      'script-src': "'self' 'unsafe-eval' *.googleapis.com maps.gstatic.com",
+      'font-src': "'self' fonts.gstatic.com",
+      'connect-src': "'self' localhost maps.gstatic.com",
+      'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com",
+      'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
     },
     torii: {
       // a 'session' property will be injected on routes and controllers
@@ -33,6 +34,16 @@ module.exports = function(environment) {
           redirectUri: 'http://localhost:4200' // default is the current URL
         }
       }
+    },
+    googleMap: {
+      // your configuration goes here
+    },
+    facebook: {
+      // #hookup
+      // appId: '209715572476105',
+      // #hookup-test
+      appId: '446858718810088',
+      scope: 'email,user_birthday,publish_stream,read_stream'
     },
     APP: {
       // Here you can pass flags/options to your application instance
@@ -50,7 +61,7 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
-    ENV.baseURL = '/';
+    // ENV.baseURL = '/';
     ENV.locationType = 'none';
 
     // keep test console output quieter
@@ -61,7 +72,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.locationType = 'none';
   }
 
   return ENV;

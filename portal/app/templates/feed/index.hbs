@@ -1,4 +1,10 @@
+{{!-- {{link-to 'I WANT A HOOK' 'feed.new' class='btn btn-success btn-block'}} --}}
 {{link-to 'I WANT A HOOK' 'feed.new' class='btn btn-success btn-block'}}
+
+{{!-- <a href="javascript:;" class='btn btn-success btn-block' {{action 'toNew'}}>I WANT A HOOK</a> --}}
+{{!-- {{#spin-button action='toNew' inFlightBinding='inFlight'
+  buttonStyle='zoom-in' class='btn btn-success btn-block'}}I WANT A HOOK{{/spin-button}} --}}
+
 
 <div style="margin-top: 14px">
   <h6>Top 7 hooks</h6>
@@ -11,7 +17,12 @@
         </a>
       </div>
       <div class="media-body">
-        <h4 class="media-heading" id="media-heading">Tư Cuồng<a class="anchorjs-link" href="#media-heading"><span class="anchorjs-icon"></span></a></h4>
+        <h4 class="media-heading" id="media-heading">
+          <a class="anchorjs-link" href="#media-heading">
+            <span class="anchorjs-icon">Tư Cuồng</span>
+          </a>
+        </h4>
+        {{!-- <i class="glyphicon glyphicon-earphone"></i>{{item.phoneNumber}}<br/> --}}
         {{item.content}}
       </div>
     </div>
