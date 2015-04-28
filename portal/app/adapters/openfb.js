@@ -42,11 +42,25 @@ export default ApplicationAdapter.extend({
     });
   },
   postToFeed: function(params) {
-    // more info at https://developers.facebook.com/docs/graph-api/reference/v2.1/post
+    // https://developers.facebook.com/docs/sharing/reference/feed-dialog/v2.1
     return new Ember.RSVP.Promise(function(resolve, reject) {
       openFB.api({
         method: 'POST',
         path: '/me/feed',
+        params: params,
+        success: function(res) {
+          resolve(res);
+        },
+        error: function(err) {
+          reject(err);
+        }
+      });
+    });
+  },
+  shareToFeed: function(params){
+    return new Ember.RSVP.Promise(function(resolve, reject) {
+      openFB.dialog({
+        path: '/dialog/feed',
         params: params,
         success: function(res) {
           resolve(res);

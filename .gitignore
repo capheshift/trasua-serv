@@ -6,7 +6,6 @@ client/public
 
 server/node_modules
 
-
 # compiled output
 portal/dist
 portal/tmp

@@ -13,11 +13,6 @@ export default function() {
     this.use('toLeft')
   );
 
-  // this.transition(
-  //   this.toRoute('profile.add-info'),
-  //   this.use('toLeft')
-  // );
-
   this.transition(
     this.fromRoute('profile'),
     this.toRoute('feed'),

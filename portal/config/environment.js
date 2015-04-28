@@ -43,9 +43,11 @@ module.exports = function(environment) {
       // appId: '209715572476105',
       // #hookup-test
       appId: '446858718810088',
-      scope: 'email,user_birthday,publish_stream,read_stream'
+      scope: 'email,user_birthday'
     },
     APP: {
+      apiPath: 'http://localhost:4201/'
+      // apiPath: 'http://dev.ok1dollar.com:4201/'
       // Here you can pass flags/options to your application instance
       // when it is created
     }
@@ -73,6 +75,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.locationType = 'none';
+    ENV.APP.apiPath = 'http://dev.ok1dollar.com:4201/';
   }
 
   return ENV;

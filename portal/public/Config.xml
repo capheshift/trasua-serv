@@ -6,7 +6,7 @@
   <!-- versionCode is optional and Android only -->
   <name>Hookup</name>
   <description>
-    Get your partner and enjoy your life.
+    Get your partner n enjoy your life.
   </description>
   <author href="http://youthstudios.tumblr.com/" email="tampham47@live.com">
     YouthStudios
@@ -20,9 +20,13 @@
   <!-- plugins -->
   <!-- <gap:plugin name="org.li8.inappbrowser" version="0.1" /> -->
   <!-- <gap:plugin name="org.nom.inappbrowser" version="1" /> -->
-  <gap:plugin name="org.apache.cordova.inappbrowser" version="0.6.0"
-    source="plugins.cordova.io" />
+  <gap:plugin name="org.apache.cordova.inappbrowser"
+    version="0.6.0" source="plugins.cordova.io" />
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+  <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.9.0">
+    <param name="APP_ID" value="446858718810088" />
+    <param name="APP_NAME" value="#hookup-test" />
+  </gap:plugin>
 
   <!-- app -->
   <icon src="icon.png" />
