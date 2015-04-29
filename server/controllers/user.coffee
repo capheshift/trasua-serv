@@ -5,8 +5,14 @@ UserBLL = require '../business/user'
 
 create = (req, res) ->
   data = req.body
-  UserBLL.create(data).then ->
-    res.send 'created'
+  UserBLL.create(data).then (user) ->
+    res.send
+      status: 'ok'
+      data: user
+  , (err) ->
+    res.send
+      status: 'err'
+      message: err
 
 getAll = (req, res) ->
   UserBLL.getAll().then (data) ->

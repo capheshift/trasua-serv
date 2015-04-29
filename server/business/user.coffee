@@ -2,10 +2,28 @@
 
 debug = require('debug')('user-bll')
 User = require '../models/user'
+mongoose = require 'mongoose'
 
 create = (data) ->
+  promise = new mongoose.Promise
+  $this = this
 	# create function always return a promise
-	User.create(data)
+  User.findOne({'facebook.id': data.facebook.id}).exec().then (userData) ->
+    # DEBUG
+    debug 'userData', userData
+    if (userData is null)
+      data.userName = data.email
+      User.create(data).then (user) ->
+        promise.complete user
+      , (err) ->
+        promise.error err
+    else
+      $this.update(userData._id, data).then (user) ->
+        promise.complete user
+      , (err) ->
+        promise.error err
+
+  return promise
 
 update = (id, data) ->
 	User.findByIdAndUpdate(id, data).exec()

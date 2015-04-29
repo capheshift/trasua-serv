@@ -2,19 +2,24 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   zoom: 17,
-  inFlight: false,
+  inFlight: null,
   mapCenter: {lat: -1, lng: -1},
   markerModel: [],
   model: {},
+  phoneNumber: '',
+  content: '',
   init: function() {
     var m = this.get('model'),
-      $this = this;
+      $this = this,
+      user = this.container.lookup('adapter:user-storage').getItem();
+
+    console.log('model', m);
     navigator.geolocation.getCurrentPosition(function(position) {
       // set location first
       m.latitude = position.coords.latitude;
       m.longitude = position.coords.longitude;
       m.coords = position.coords;
-      m.phoneNumber = '01643 652 922';
+      m._user = user._id;
 
       var marker = {
         lat: m.latitude,
@@ -22,10 +27,8 @@ export default Ember.Controller.extend({
         isDraggable: false
       };
 
-      // alert('location ' + JSON.stringify(m));
-      // $this.set('centerLat', m.latitude);
-      // $this.set('centerLng', m.longitude);
       $this.set('model', m);
+      $this.set('phoneNumber', user.phoneNumber);
       $this.set('mapCenter', {lat: m.latitude, lng: m.longitude});
       $this.get('markerModel').addObject(marker);
     });
@@ -36,12 +39,24 @@ export default Ember.Controller.extend({
         model = this.get('model'),
         $this = this;
 
-      $this.set('inFlight', true);
-      feedApi.create(model).then(function(data) {
-        $this.set('inFlight', null);
-        $this.set('model.content', '');
+      model.phoneNumber = this.get('phoneNumber');
+      model.content = this.get('content');
+      try {
+        $this.set('inFlight', true);
+        console.log('model', model);
+        feedApi.create(model).then(function(data) {
+          $this.set('inFlight', null);
+          $this.set('content', '');
+          $this.transitionToRoute('feed');
+        });
+      }
+      catch(err){
+        alert('create ' + JSON.stringify(err));
         $this.transitionToRoute('feed');
-      })
+      }
+    },
+    cancel: function(){
+      this.transitionTo('feed');
     }
   }
 });

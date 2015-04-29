@@ -34,3 +34,25 @@ label {
   height: 130px;
   border: 1px solid #f05f40;
 }
+
+.navbar-toggle {
+  padding: 6px 10px;
+  border-radius: 17px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+  span {
+    color: #ddd;
+  }
+}
+.navbar-default .navbar-toggle.active {
+  border-color: #ddd;
+  span {
+    color: #f05f40;
+  }
+}
+
+.container {
+  text-align: left;
+}

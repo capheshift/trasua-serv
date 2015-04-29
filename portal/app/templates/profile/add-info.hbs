@@ -3,19 +3,33 @@
 <form class="form-horizontal">
   <fieldset>
 
+  <!-- Password input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="label-email">Email</label>
+    <div class="col-md-6">
+      {{input value=model.email
+        id="label-email" name="label-email"
+        placeholder="" class="form-control input-md" required=""}}
+    </div>
+  </div>
+
   <!-- Text input-->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="label-email">Phone Number</label>
+    <label class="col-md-4 control-label" for="label-phone-number">Phone Number</label>
     <div class="col-md-6">
-      <input id="label-email" name="label-email" type="text" placeholder="" class="form-control input-md" required="">
+      {{input value=model.phoneNumber
+        id="label-phone-number" name="label-phone-number" type="text" placeholder=""
+        class="form-control input-md" required=""}}
     </div>
   </div>
 
   <!-- Password input-->
   <div class="form-group">
-    <label class="col-md-4 control-label" for="label-passwordinput">Skype</label>
+    <label class="col-md-4 control-label" for="label-skype">Skype</label>
     <div class="col-md-6">
-      <input id="label-passwordinput" name="label-passwordinput" type="password" placeholder="" class="form-control input-md" required="">
+      {{input value=model.skype
+        id="label-skype" name="label-skype"
+        placeholder="" class="form-control input-md" required=""}}
     </div>
   </div>
 

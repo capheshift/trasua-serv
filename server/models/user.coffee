@@ -14,10 +14,13 @@ UserSchema = new Schema
     type: String
     unique: true
 
-  firstName:
+  phoneNumber:
     type: String
 
-  lastName:
+  skype:
+    type: String
+
+  fullName:
     type: String
 
   birthday:
@@ -28,6 +31,9 @@ UserSchema = new Schema
 
   role:
     type: String
+
+  facebook:
+    type: Schema.Types.Mixed
 
   createdDate:
     type: Date

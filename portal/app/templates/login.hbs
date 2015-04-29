@@ -1,44 +1,9 @@
-{{!-- <h4 class="header">LOGIN</h4> --}}
 
 <div style="margin-top: 150px">
-  {{!-- {{link-to 'Login by facebook' 'feed' class='btn btn-success btn-block'}} --}}
-  {{!-- <a href="javascript:;" class="btn btn-success btn-block" {{action 'loginByFacebook'}}>Login by facebook</a> --}}
-  {{!-- {{#link-to-animated 'feed' animations='main:fade'}}Login by facebook{{/link-to-animated}} --}}
   {{#spin-button action='loginByFacebook' inFlightBinding='model.inFlight'
     buttonStyle='zoom-in' class='btn btn-success btn-block'}}Login by facebook{{/spin-button}}
 </div>
 
 <h6 style="text-align: center">get your partner n enjoy your life</h6>
-
-
-{{!-- <form class="form-horizontal">
-  <fieldset>
-  <!-- Text input-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="label-email">Email</label>
-    <div class="col-md-6">
-      <input id="label-email" name="label-email" type="text" placeholder="" class="form-control input-md" required="">
-    </div>
-  </div>
-
-  <!-- Password input-->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="label-passwordinput">Password</label>
-    <div class="col-md-6">
-      <input id="label-passwordinput" name="label-passwordinput" type="password" placeholder="" class="form-control input-md" required="">
-    </div>
-  </div>
-
-  <!-- Button (Double) -->
-  <div class="form-group">
-    <label class="col-md-4 control-label" for="btn-login"></label>
-    <div class="col-md-8">
-      <button id="btn-login" name="btn-login" class="btn btn-success">Login</button>
-      <button id="btn-register" name="btn-register" class="btn btn-default">Register</button>
-    </div>
-  </div>
-  </fieldset>
-</form> --}}
-
 
 {{outlet}}

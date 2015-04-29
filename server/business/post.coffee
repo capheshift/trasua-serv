@@ -15,7 +15,7 @@ getById = (id) ->
   PostModel.findById(id).exec()
 
 getAll = ->
-  PostModel.find({}).sort({modified: -1}).exec()
+  PostModel.find({}).sort({modified: -1}).populate('_user').exec()
 
 getByType = (type) ->
   PostModel.find({type: type}).sort({modified: -1}).exec()
@@ -34,7 +34,7 @@ getByLocation = (lat, lon, distance) ->
   return PostModel.find({})
     .where('latitude').gt(area.sw._degLat).lt(area.ne._degLat)
     .where('longitude').gt(area.sw._degLon).lt(area.ne._degLon)
-    .sort('-createdDate')
+    .sort('-createdDate').populate('_user')
     .exec()
 
 

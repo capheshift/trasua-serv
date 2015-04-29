@@ -133,7 +133,6 @@ var openFB = (function () {
 
         if (runningInCordova) {
             oauthRedirectURL = "https://www.facebook.com/connect/login_success.html";
-            // oauthRedirectURL = "http://www.facebook.com/connect/login_success.html";
         }
 
         startTime = new Date().getTime();
@@ -142,25 +141,11 @@ var openFB = (function () {
 
         // If the app is running in Cordova, listen to URL changes in the InAppBrowser until we get a URL with an access_token or an error
         if (runningInCordova) {
-            // loginWindow && loginWindow.addEventListener('loadstart', loginWindow_loadStartHandler);
-            // loginWindow && loginWindow.addEventListener('exit', loginWindow_exitHandler);
-            // loginWindow.addEventListener('loadstart', loginWindow_loadStartHandler);
-            // loginWindow.addEventListener('exit', loginWindow_exitHandler);
-
-            if (loginWindow == undefined) {
-                alert('loginWindow is undefined');
-            } else {
-                // alert('loginWindow is defined');
-                loginWindow.addEventListener('loadstart', loginWindow_loadStartHandler);
-                loginWindow.addEventListener('exit', loginWindow_exitHandler);
-                // setTimeout(function() {
-                //     loginWindow.close();
-                // }, 10000);
-            }
+            loginWindow.addEventListener('loadstart', loginWindow_loadStartHandler);
+            loginWindow.addEventListener('exit', loginWindow_exitHandler);
         }
         // Note: if the app is running in the browser the loginWindow dialog will call back by invoking the
         // oauthCallback() function. See oauthcallback.html for details.
-
     }
 
     /**

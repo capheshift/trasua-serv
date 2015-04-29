@@ -36,5 +36,5 @@
   <preference name="orientation" value="portrait" />
 
   <preference name="SplashScreen" value="splash" />
-  <preference name="SplashScreenDelay" value="10000" />
+  <preference name="SplashScreenDelay" value="3000" />
 </widget>
