@@ -3,7 +3,6 @@
   <fieldset>
 
   <div class="form-group">
-    {{!-- <label class="col-md-4 control-label" for="input-status">Your place</label> --}}
     <div class="col-md-6">
       {{google-map
         lat=mapCenter.lat lng=mapCenter.lng markers=markerModel
@@ -13,14 +12,14 @@
   </div>
 
   <!-- phone number -->
-  <div class="form-group">
+  {{!-- <div class="form-group">
     <label class="col-md-4 control-label" for="input-phone-number">Phone number</label>
     <div class="col-md-6">
       {{input value=phoneNumber
         id="input-phone-number" name="input-phone-number" type="text" placeholder=""
         class="form-control input-md"}}
     </div>
-  </div>
+  </div> --}}
 
   <!-- Textarea -->
   <div class="form-group">
@@ -30,9 +29,7 @@
     </div>
   </div>
 
-  {{!-- <h5>(*) The more you post, the better you can be reach.</h5> --}}
-  <h5>(*) Vì sự an toàn của bạn, bài viết chỉ xuất hiện trong vòng bán kính 2km.
-  </h5>
+  <h5>(*) Vì sự an toàn của bạn, bài viết chỉ xuất hiện trong vòng bán kính 2km.</h5>
 
   <!-- Button (Double) -->
   <div class="form-group">
@@ -41,7 +38,7 @@
       {{!-- {{link-to 'Cancel' 'feed' class="btn btn-default"}} --}}
       <a href="javascript:;" class="btn btn-default" {{action 'cancel'}}>Cancel</a>
       <button id="btn-publish" name="btn-publish"
-        class="btn btn-success" {{action 'create'}}>Want a Hook</button>
+        class="btn btn-success" {{action 'create'}}>New hook</button>
 
       {{!-- {{#spin-button action='create' inFlightBinding='inFlight'
         buttonStyle='zoom-in' class='btn btn-success'}}Want a Hook{{/spin-button}} --}}
@@ -49,8 +46,5 @@
   </div>
   </fieldset>
 </form>
-
-{{!-- <br/><br/>
-<h5>(*) The more you post, the better you can be reach.</h5> --}}
 
 {{outlet}}

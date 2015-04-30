@@ -27,7 +27,7 @@ getByLocation = (req, res) ->
   q.lat = parseFloat(q.latitude)
   q.lon = parseFloat(q.longitude)
   debug 'getByLocation', q
-  PostBLL.getByLocation(q.lat, q.lon, 0.5).then (data) ->
+  PostBLL.getByLocation(q.lat, q.lon, 1.5).then (data) ->
     res.send data
   , (err) ->
     res.send

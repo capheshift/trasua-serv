@@ -46,7 +46,13 @@ module.exports = function(environment) {
       scope: 'email,user_birthday'
     },
     APP: {
-      apiPath: 'http://localhost:4201/'
+      apiPath: 'http://localhost:4201/',
+      shareInfo: {
+        display: 'touch',
+        link: 'http://youthstudios.tumblr.com/post/117602052208/hookup-app',
+        picture: 'https://photos-6.dropbox.com/t/2/AAB8xO0mmcs7YSrt4rCBmDoOxDT913Q7iNXqCWT7J9oSjw/12/24351725/png/1024x768/3/1430233200/0/2/icon.png/CO2nzgsgASACKAEoAg/BSnCCt70Xoqj_OvHcdUOUEPB0EfU6wmqwEJqW_yFZs0',
+        caption: 'get your partner n enjoy your life'
+      }
       // apiPath: 'http://dev.ok1dollar.com:4201/'
       // Here you can pass flags/options to your application instance
       // when it is created

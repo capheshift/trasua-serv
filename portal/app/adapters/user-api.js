@@ -12,7 +12,7 @@ apiList = [
 jQuery.each(apiList, function(index, item) {
   result[item.name] = function(data) {
     // in this case, 'this' is a object was referenced from Adapter
-    return this.ajax(this.url + item.path, item.method, {data: data});
+    return this.ajax(this.url + item.path, item.method, {data: data, cache: false});
   };
 });
 

@@ -12,7 +12,7 @@ update = (id, data) ->
   PostModel.findByIdAndUpdate(id, data).exec()
 
 getById = (id) ->
-  PostModel.findById(id).exec()
+  PostModel.findById(id).populate('_user').exec()
 
 getAll = ->
   PostModel.find({}).sort({modified: -1}).populate('_user').exec()

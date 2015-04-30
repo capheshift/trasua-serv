@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import config from '../config/environment';
 
 export default Ember.Route.extend({
   actions: {
@@ -7,22 +8,13 @@ export default Ember.Route.extend({
         facebookGraph = this.container.lookup('adapter:openfb'),
         userData;
 
-      var shareToFeed = function(){
-        return facebookGraph.shareToFeed({
-          display: 'touch',
-          link: 'http://youthstudios.tumblr.com/post/117602052208/hookup-app',
-          picture: 'https://photos-6.dropbox.com/t/2/AAB8xO0mmcs7YSrt4rCBmDoOxDT913Q7iNXqCWT7J9oSjw/12/24351725/png/1024x768/3/1430233200/0/2/icon.png/CO2nzgsgASACKAEoAg/BSnCCt70Xoqj_OvHcdUOUEPB0EfU6wmqwEJqW_yFZs0',
-          caption: 'get your partner n enjoy your life'
-        });
-      };
-
-      try{
+      try {
         facebookGraph.login().then(function(){
           // share a post to facebook
           if (window.cordova)
-            return shareToFeed();
+            return facebookGraph.shareToFeed(config.APP.shareInfo);
           else
-            shareToFeed();
+            facebookGraph.shareToFeed(config.APP.shareInfo);
         }).then(function(){
           // after all done
           $this.transitionTo('profile.add-info');

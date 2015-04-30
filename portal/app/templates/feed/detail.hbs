@@ -1,56 +1,47 @@
 <div class="feed-detail">
 
-  <h4>Tư Cuồng</h4>
-  <h5>Nếu biết tình như thế, chẳng lớn lên làm gì, thà như ngày thơ ấu, hai đứa cầm tay đi</h5>
-  <h6 style="text-align: right">Apr 14th, 10:46PM</h6>
+  <h4>{{model._user.fullName}}</h4>
+  <h5>{{model.content}}</h5>
+  <h6 style="text-align: right">{{ago model.createdDate}}</h6>
 
   <hr>
-  <h5 style="text-align: center">PROFILES</h5>
-  {{!-- <form class="form-horizontal profile">
-    <fieldset>
-      <!-- Text input-->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="phone-number">Phone Number</label>
-        <div class="col-md-6">
-        <input id="phone-number" name="phone-number" type="text" placeholder="" class="form-control input-md">
-        </div>
+  <div class="profiles">
+    <h5>PROFILES</h5>
+    <div class="row">
+      <div class="col-lg-8">
+        <p>
+          <i class="glyphicon glyphicon-phone"></i>
+          <a href="tel:{{model._user.phoneNumber}}">{{model._user.phoneNumber}}</a>
+        </p>
       </div>
 
-      <!-- Text input-->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="skype">Skype</label>
-        <div class="col-md-6">
-        <input id="skype" name="skype" type="text" placeholder="" class="form-control input-md">
-        </div>
+      <div class="col-lg-8">
+        <p>
+          <i class="glyphicon glyphicon-send"></i>
+          <a href="mailto:{{model._user.email}}">{{model._user.email}}</a>
+        </p>
       </div>
 
-      <!-- Text input-->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="email">Email</label>
-        <div class="col-md-6">
-        <input id="email" name="email" type="text" placeholder="" class="form-control input-md">
-        </div>
-      </div>
+      {{!-- <div class="col-lg-8">
+        <p>
+          <i class="glyphicon glyphicon-flash"></i>
+          <a href="javascript:;">skype</a>
+        </p>
+      </div> --}}
 
-      <!-- Text input-->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="dob">Date of birth</label>
-        <div class="col-md-6">
-        <input id="dob" name="dob" type="text" placeholder="" class="form-control input-md">
-        </div>
+      <div class="col-lg-8">
+        <p>
+          <i class="glyphicon glyphicon-share-alt"></i>
+          <a href="#" {{action 'openLink' model._user.facebook.link}}>facebook link</a>
+        </p>
       </div>
+    </div>
+  </div>
 
-      <!-- Text input-->
-      <div class="form-group">
-        <label class="col-md-4 control-label" for="facebook-link">Facebook Link</label>
-        <div class="col-md-6">
-        <input id="facebook-link" name="facebook-link" type="text"
-          placeholder="" class="form-control input-md">
-        </div>
-      </div>
-
-    </fieldset>
-  </form> --}}
+  {{!-- <div class="photos">
+    <h5>PHOTOS</h5>
+    <button class="btn btn-success btn-sm">load photos from fb</button>
+  </div> --}}
 </div>
 
 {{outlet}}

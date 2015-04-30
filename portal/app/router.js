@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('login');
   this.route('register');
   this.route('feed', function() {
-    this.route('detail');
+    this.route('detail', {path: '/:_id'});
     this.route('new');
   });
   this.route('hookup');

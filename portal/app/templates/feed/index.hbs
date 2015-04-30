@@ -1,12 +1,12 @@
-{{link-to 'I WANT A HOOK' 'feed.new' class='btn btn-success btn-block'}}
+{{link-to 'I WANNA HOOKUP' 'feed.new' class='btn btn-success btn-block'}}
 {{!-- {{#spin-button action='toNew' inFlightBinding='inFlight'
   buttonStyle='expand-right' class='btn btn-success btn-block'}}I WANT A HOOK{{/spin-button}} --}}
 
 <div style="margin-top: 14px">
-  <h6>Top 7 hooks</h6>
+  <h6>hooks</h6>
 
   {{#each item in model}}
-    <div class="media" {{action 'navToDetail'}}>
+    <div class="media" {{action 'navToDetail' item}}>
       <div class="media-left">
         <a href="javascript:;">
           <img class="media-object"

@@ -14,6 +14,12 @@ export default function() {
   );
 
   this.transition(
+    this.fromRoute('login'),
+    this.toRoute('feed'),
+    this.use('toLeft')
+  );
+
+  this.transition(
     this.fromRoute('feed'),
     this.toRoute('about'),
     this.use('toLeft'),

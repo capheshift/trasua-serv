@@ -32,8 +32,8 @@ export default Ember.Controller.extend({
     });
   },
   actions: {
-    navToDetail: function () {
-      this.transitionToRoute('feed.detail');
+    navToDetail: function (item) {
+      this.transitionToRoute('feed.detail', item);
     }
   }
 });

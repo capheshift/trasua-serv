@@ -4,7 +4,7 @@
   xmlns:gap="http://phonegap.com/ns/1.0"
   id="com.tumblr.youthstudios.hookup" versionCode="9" version="0.0.9">
   <!-- versionCode is optional and Android only -->
-  <name>Hookup</name>
+  <name>#Hookup</name>
   <description>
     Get your partner n enjoy your life.
   </description>
@@ -17,16 +17,9 @@
   <feature name="http://api.phonegap.com/1.0/geolocation" />
   <feature name="http://api.phonegap.com/1.0/device" />
 
-  <!-- plugins -->
-  <!-- <gap:plugin name="org.li8.inappbrowser" version="0.1" /> -->
-  <!-- <gap:plugin name="org.nom.inappbrowser" version="1" /> -->
   <gap:plugin name="org.apache.cordova.inappbrowser"
     version="0.6.0" source="plugins.cordova.io" />
   <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
-  <gap:plugin name="com.phonegap.plugins.facebookconnect" version="0.9.0">
-    <param name="APP_ID" value="446858718810088" />
-    <param name="APP_NAME" value="#hookup-test" />
-  </gap:plugin>
 
   <!-- app -->
   <icon src="icon.png" />

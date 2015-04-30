@@ -5,18 +5,25 @@ export default Ember.Controller.extend({
 
   init: function(){
     var
-      $this = this,
-      userData,
+      userApi = this.container.lookup('adapter:user-api'),
       facebookGraph = this.container.lookup('adapter:openfb'),
-      user = this.container.lookup('adapter:user-storage').getItem() || {};
+      $this = this,
+      userData, user,
+      fbUser;
 
-    facebookGraph.getUserData().then(function(fbUser){
+    facebookGraph.getUserData().then(function(result){
+      fbUser = result;
+      console.log('fbUser', fbUser);
+      return userApi.create({facebook: fbUser});
+    }).then(function(r){
+      user = r.data;
       userData = {
         fullName: user.fullName || fbUser.name,
         phoneNumber: user.phoneNumber || fbUser.phone_number,
         email: user.email || fbUser.email,
         facebook: fbUser
       }
+      console.log('user', user, userData);
       $this.set('model', userData);
     });
   },
