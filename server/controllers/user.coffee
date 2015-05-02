@@ -10,7 +10,7 @@ create = (req, res) ->
       status: 'ok'
       data: user
   , (err) ->
-    console.log 'err', err
+    # console.log 'err', err
     res.send
       status: 'err'
       message: err

@@ -7,6 +7,7 @@ mongoose = require 'mongoose'
 create = (data) ->
   promise = new mongoose.Promise
   $this = this
+  if (!data.facebook) data.facebook = {}
 	# create function always return a promise
   User.findOne({'facebook.id': data.facebook.id}).exec().then (userData) ->
     # DEBUG
