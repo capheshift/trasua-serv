@@ -7,8 +7,10 @@ mongoose = require 'mongoose'
 create = (data) ->
   promise = new mongoose.Promise
   $this = this
-  if (!data.facebook) data.facebook = {}
-	# create function always return a promise
+
+  data.facebook = {} if (!data.facebook)
+
+  # create function always return a promise
   User.findOne({'facebook.id': data.facebook.id}).exec().then (userData) ->
     # DEBUG
     debug 'userData', userData
@@ -28,15 +30,15 @@ create = (data) ->
   return promise
 
 update = (id, data) ->
-	User.findByIdAndUpdate(id, data).exec()
+  User.findByIdAndUpdate(id, data).exec()
 
 getById = (id) ->
-	User.getById(id).exec()
+  User.getById(id).exec()
 
 getAll = ->
-	User.find({}).exec()
+  User.find({}).exec()
 
 
 module.exports = {
-	create, update, getById, getAll
+  create, update, getById, getAll
 }
