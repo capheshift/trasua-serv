@@ -2,7 +2,7 @@
 <widget
   xmlns="http://www.w3.org/ns/widgets"
   xmlns:gap="http://phonegap.com/ns/1.0"
-  id="com.tumblr.youthstudios.hookup" versionCode="9" version="0.0.9">
+  id="com.tumblr.youthstudios.hookup" versionCode="10" version="0.0.10">
   <!-- versionCode is optional and Android only -->
   <name>#Hookup</name>
   <description>
