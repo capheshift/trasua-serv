@@ -19,6 +19,21 @@ getAll = (req, res) ->
   UserBLL.getAll().then (data) ->
     res.send data
 
+getByFacebookId = (req, res) ->
+  query = req.query
+  debug 'query', query
+  UserBLL.getByFacebookId(query).then (data) ->
+    debug 'data', data
+    res.send
+      status: 'ok'
+      data: data,
+  , (err) ->
+    res.send
+      status: 'error',
+      err: err
+
+
 module.exports = (app) ->
   app.post '/user/create', create
+  app.get '/user/getByFacebookId', getByFacebookId
   app.get '/user/getAll', getAll

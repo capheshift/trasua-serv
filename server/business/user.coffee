@@ -32,6 +32,10 @@ create = (data) ->
 update = (id, data) ->
   User.findByIdAndUpdate(id, data).exec()
 
+getByFacebookId = (data) ->
+  data.facebook = {} if (!data.facebook)
+  User.findOne({'facebook.id': data.facebook.id}).exec()
+
 getById = (id) ->
   User.getById(id).exec()
 
@@ -40,5 +44,5 @@ getAll = ->
 
 
 module.exports = {
-  create, update, getById, getAll
+  create, update, getById, getAll, getByFacebookId
 }

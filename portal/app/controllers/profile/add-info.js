@@ -14,9 +14,9 @@ export default Ember.Controller.extend({
     facebookGraph.getUserData().then(function(result){
       fbUser = result;
       console.log('fbUser', fbUser);
-      return userApi.create({facebook: fbUser});
+      return userApi.getByFacebookId({facebook: fbUser});
     }).then(function(r){
-      user = r.data;
+      user = r.data || {};
       userData = {
         fullName: user.fullName || fbUser.name,
         phoneNumber: user.phoneNumber || fbUser.phone_number,
