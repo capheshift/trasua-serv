@@ -18,6 +18,7 @@ create = (data) ->
       , (err) ->
         promise.error err
     else
+      data.userName = data.email
       $this.update(userData._id, data).then (user) ->
         promise.complete user
       , (err) ->

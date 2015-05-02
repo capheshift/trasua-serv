@@ -40,10 +40,10 @@ module.exports = function(environment) {
     },
     facebook: {
       // #hookup
-      // appId: '209715572476105',
+      appId: '446852885477338',
       // #hookup-test
-      appId: '446858718810088',
-      scope: 'email,user_birthday'
+      // appId: '446858718810088',
+      scope: 'email,user_birthday,public_profile,user_friends,publish_actions,read_stream,user_photos'
     },
     APP: {
       apiPath: 'http://localhost:4201/',
@@ -51,6 +51,8 @@ module.exports = function(environment) {
         display: 'touch',
         link: 'http://youthstudios.tumblr.com/post/117602052208/hookup-app',
         picture: 'https://photos-6.dropbox.com/t/2/AAB8xO0mmcs7YSrt4rCBmDoOxDT913Q7iNXqCWT7J9oSjw/12/24351725/png/1024x768/3/1430233200/0/2/icon.png/CO2nzgsgASACKAEoAg/BSnCCt70Xoqj_OvHcdUOUEPB0EfU6wmqwEJqW_yFZs0',
+        name: '#Hoookup App (18+)',
+        description: 'Hookup là ứng dụng hẹn hò chỉ dành cho những người trên 18 tuổi, bạn đã đủ mạnh để thử?',
         caption: 'get your partner n enjoy your life'
       }
       // apiPath: 'http://dev.ok1dollar.com:4201/'

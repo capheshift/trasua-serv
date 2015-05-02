@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   dataModel: {},
   inFlight: false,
+  position: {},
   updateData: function() {
     var feedApi = this.container.lookup('adapter:feed'),
       model = this.get('dataModel'),
@@ -18,8 +19,7 @@ export default Ember.Controller.extend({
     }
   },
   init: function() {
-    var feedApi = this.container.lookup('adapter:feed'),
-      $this = this,
+    var $this = this,
       dataModel = {};
 
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -28,12 +28,18 @@ export default Ember.Controller.extend({
       dataModel.longitude = position.coords.longitude;
 
       $this.set('dataModel', dataModel);
+      $this.set('position', position);
       $this.updateData();
     });
   },
   actions: {
     navToDetail: function (item) {
       this.transitionToRoute('feed.detail', item);
+    },
+    toNew: function(){
+      var position = this.get('position');
+      console.log('position', position);
+      this.transitionToRoute('feed.new', position);
     }
   }
 });

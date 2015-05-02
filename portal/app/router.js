@@ -11,7 +11,7 @@ Router.map(function() {
   this.route('register');
   this.route('feed', function() {
     this.route('detail', {path: '/:_id'});
-    this.route('new');
+    this.route('new', {path: '/new/:timestamp'});
   });
   this.route('hookup');
   this.route('setting');

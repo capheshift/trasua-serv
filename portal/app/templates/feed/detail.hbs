@@ -38,6 +38,14 @@
     </div>
   </div>
 
+  <div class="photos">
+    <h5>MAPS</h5>
+    {{google-map
+      lat=model.latitude lng=model.longitude markers=markers
+      zoom=17 gopt_zoomControl=false gopt_draggable=true
+      type='map'}}
+  </div>
+
   {{!-- <div class="photos">
     <h5>PHOTOS</h5>
     <button class="btn btn-success btn-sm">load photos from fb</button>

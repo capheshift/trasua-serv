@@ -18,7 +18,7 @@ export default ApplicationAdapter.extend({
           reject(res);
         else
           resolve(res);
-      }, 'email,read_stream,publish_stream');
+      }, config.facebook.scope);
     });
   },
   getLoginStatus: function() {
@@ -62,6 +62,21 @@ export default ApplicationAdapter.extend({
       openFB.dialog({
         path: '/dialog/feed',
         params: params,
+        success: function(res) {
+          resolve(res);
+        },
+        error: function(err) {
+          reject(err);
+        }
+      });
+    });
+  },
+  api: function(object){
+    return new Ember.RSVP.Promise(function(resolve, reject) {
+      openFB.api({
+        method: object.method,
+        path: object.path,
+        params: object.params,
         success: function(res) {
           resolve(res);
         },

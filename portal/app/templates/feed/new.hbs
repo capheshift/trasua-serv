@@ -5,8 +5,8 @@
   <div class="form-group">
     <div class="col-md-6">
       {{google-map
-        lat=mapCenter.lat lng=mapCenter.lng markers=markerModel
-        zoom=zoom gopt_zoomControl=false gopt_draggable=false
+        lat=mapCenter.lat lng=mapCenter.lng markers=markers
+        zoom=zoom gopt_zoomControl=false gopt_draggable=true
         type='map'}}
     </div>
   </div>
@@ -29,7 +29,7 @@
     </div>
   </div>
 
-  <h5>(*) Vì sự an toàn của bạn, bài viết chỉ xuất hiện trong vòng bán kính 2km.</h5>
+  <h5>*for the safety of you, the article appears only within a radius of 2km.</h5>
 
   <!-- Button (Double) -->
   <div class="form-group">
