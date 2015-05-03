@@ -4,23 +4,32 @@ export default Ember.Controller.extend({
   dataModel: {},
   inFlight: false,
   position: {},
+  hexColorsArray: ['#000', '#fff'],
+  loading: false,
   updateData: function() {
     var feedApi = this.container.lookup('adapter:feed'),
       model = this.get('dataModel'),
       $this = this;
 
+    this.set('loading', true);
     this.set('inFlight', true);
     // if request data is valid
     if (model.latitude && model.longitude){
       feedApi.getByLocation(model).then(function(data) {
         $this.set('model', data);
         $this.set('inFlight', false);
+        setTimeout(function(){
+          $this.set('loading', false);
+        }, 2000);
       });
     }
   },
   init: function() {
     var $this = this,
       dataModel = {};
+
+    // this.set('hexColorsArray', ['#000', '#fff']);
+    // this.set('loading', true);
 
     navigator.geolocation.getCurrentPosition(function(position) {
       // set location first

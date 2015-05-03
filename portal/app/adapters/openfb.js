@@ -58,6 +58,7 @@ export default ApplicationAdapter.extend({
     });
   },
   shareToFeed: function(params){
+    // https://developers.facebook.com/docs/sharing/reference/feed-dialog/v2.3
     return new Ember.RSVP.Promise(function(resolve, reject) {
       openFB.dialog({
         path: '/dialog/feed',
