@@ -6,7 +6,7 @@ export default Ember.Route.extend({
       currentUser = userStorage.getItem();
 
     if (currentUser == null){
-      this.transitionTo('login');
+      this.transitionTo('profile.confirm-age');
     } else {
       this.transitionTo('feed');
     }

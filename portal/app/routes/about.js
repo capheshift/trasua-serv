@@ -18,8 +18,11 @@ export default Ember.Route.extend({
     moreApps: function(){
       alert('This function will be add at next version.');
     },
-    more: function(link){
-      window.open(link, '_system', 'location=yes');
+    more: function(){
+      window.open(config.APP.tumblrLink, '_system', 'location=yes');
+    },
+    privacy: function(){
+      window.open(config.APP.privacyLink, '_system', 'location=yes');
     }
   }
 });

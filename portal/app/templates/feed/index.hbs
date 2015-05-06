@@ -1,13 +1,14 @@
 {{!-- {{link-to 'I WANNA HOOKUP' 'feed.new' class='btn btn-success btn-block'}} --}}
 
-<a href="javascript:;" class='btn btn-success btn-block' {{action 'toNew'}}>I WANNA HOOKUP</a>
-{{loading-slider isLoading=loading}}
+<a href="javascript:;" class='btn btn-success btn-block' {{action 'toNew'}}>NEW HOOK</a>
+
+{{!-- {{loading-slider isLoading=loading}} --}}
 
 {{!-- {{#spin-button action='toNew' inFlightBinding='inFlight'
   buttonStyle='expand-right' class='btn btn-success btn-block'}}I WANT A HOOK{{/spin-button}} --}}
 
 <div style="margin-top: 14px">
-  <h6>hooks</h6>
+  <h6>hooks within 2km</h6>
 
   {{#each item in model}}
     <div class="media" {{action 'navToDetail' item}}>

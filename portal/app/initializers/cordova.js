@@ -8,6 +8,11 @@ export function initialize(container, app) {
     document.addEventListener('deviceready', function() {
       app.advanceReadiness();
     }, false);
+
+    // // back button
+    document.addEventListener('backbutton', function() {
+      return;
+    }, false);
   } else {
     // console.log('ember app is runing on browser');
   }

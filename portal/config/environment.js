@@ -46,18 +46,19 @@ module.exports = function(environment) {
       scope: 'email,user_birthday,public_profile,user_friends,publish_actions,read_stream,user_photos'
     },
     APP: {
+      // Here you can pass flags/options to your application instance
+      // when it is created
       apiPath: 'http://localhost:4201/',
+      privacyLink: 'http://youthstudios.tumblr.com/post/118207307688/privacy-policy',
+      tumblrLink: 'http://youthstudios.tumblr.com/post/117602052208/hookup-app',
       shareInfo: {
         display: 'touch',
         link: 'http://youthstudios.tumblr.com/post/117602052208/hookup-app',
-        picture: 'https://photos-6.dropbox.com/t/2/AAB8xO0mmcs7YSrt4rCBmDoOxDT913Q7iNXqCWT7J9oSjw/12/24351725/png/1024x768/3/1430233200/0/2/icon.png/CO2nzgsgASACKAEoAg/BSnCCt70Xoqj_OvHcdUOUEPB0EfU6wmqwEJqW_yFZs0',
-        name: '#Hoookup App (18+)',
+        picture: 'https://2vwevg.dm2303.livefilestore.com/y2p6OSyvIeZAcUt-Rh6IuJ9qDutXUnXuEM-jP3vB_e5Mj4WTH0PgNjcS9aEz3bKZLVTpHN4uQAcenFcDTIGv5OzoFudN5EXARisA5krsjZgthUaLB5ClU4NSZSSQMSdOWp9hVkpptO430Eli-PKp6JOmDBfCfqcuk0ua696szD9fzU/Hook300.png?psid=1',
+        name: '#Hookup App (18+)',
         description: 'Hookup là ứng dụng hẹn hò chỉ dành cho những người trên 18 tuổi, bạn đã đủ mạnh để thử?',
         caption: 'get your partner n enjoy your life'
       }
-      // apiPath: 'http://dev.ok1dollar.com:4201/'
-      // Here you can pass flags/options to your application instance
-      // when it is created
     }
   };
 
