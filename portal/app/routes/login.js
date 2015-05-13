@@ -9,13 +9,14 @@ export default Ember.Route.extend({
         userData;
 
       try {
+        // // share a post to facebook
+        //   if (window.cordova)
+        //     return facebookGraph.shareToFeed(config.APP.shareInfo);
+        //   else
+        //     facebookGraph.shareToFeed(config.APP.shareInfo);
+        // }).then(function(){
+
         facebookGraph.login().then(function(){
-          // share a post to facebook
-          if (window.cordova)
-            return facebookGraph.shareToFeed(config.APP.shareInfo);
-          else
-            facebookGraph.shareToFeed(config.APP.shareInfo);
-        }).then(function(){
           // after all done
           $this.transitionTo('profile.add-info');
         }, function(err) {

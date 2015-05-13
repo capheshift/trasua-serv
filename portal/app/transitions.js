@@ -1,7 +1,7 @@
 // import { animate, stop } from 'liquid-fire';
 
 export default function() {
-  this.setDefault({ duration: 350 });
+  this.setDefault({duration: 250});
 
   this.transition(
     this.toRoute('login'),

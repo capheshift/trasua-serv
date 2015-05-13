@@ -26,5 +26,10 @@ export default Ember.Route.extend({
     controller.set('mapCenter', {lat: pos.latitude, lng: pos.longitude});
     controller.set('phoneNumber', user.phoneNumber);
     controller.set('model', m);
+  },
+  actions: {
+    goBack: function(){
+      this.transitionToRoute('feed.index');
+    }
   }
 });

@@ -26,6 +26,9 @@ export default Ember.Route.extend({
   actions: {
     openLink: function(link){
       window.open(link, '_system', 'location=yes');
+    },
+    goBack: function(){
+      this.transitionToRoute('feed.index');
     }
   }
 });

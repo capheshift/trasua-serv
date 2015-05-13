@@ -23,6 +23,9 @@ export default Ember.Route.extend({
     },
     privacy: function(){
       window.open(config.APP.privacyLink, '_system', 'location=yes');
+    },
+    goBack: function(){
+      this.transitionToRoute('feed.index');
     }
   }
 });

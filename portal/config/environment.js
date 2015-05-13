@@ -54,9 +54,10 @@ module.exports = function(environment) {
       shareInfo: {
         display: 'touch',
         link: 'http://youthstudios.tumblr.com/post/117602052208/hookup-app',
-        picture: 'https://2vwevg.dm2303.livefilestore.com/y2p6OSyvIeZAcUt-Rh6IuJ9qDutXUnXuEM-jP3vB_e5Mj4WTH0PgNjcS9aEz3bKZLVTpHN4uQAcenFcDTIGv5OzoFudN5EXARisA5krsjZgthUaLB5ClU4NSZSSQMSdOWp9hVkpptO430Eli-PKp6JOmDBfCfqcuk0ua696szD9fzU/Hook300.png?psid=1',
+        picture: 'https://2vwevg.dm2303.livefilestore.com/y2p6OSyvIeZAcUt-Rh6IuJ9qDutXUnXuEM-jP3vB_e5Mj4WTH0PgNjcS9aEz3bKZLVTpHN4uQAcenFcDTIGv5OzoFudN5EXARisA5krsjZgthUaLB5ClU4NSZSSQMSdOWp9hVkpptO430Eli-PKp6JOmDBfCfqcuk0ua696szD9fzU/Hook300.png',
         name: '#Hookup App (18+)',
-        description: 'Hookup là ứng dụng hẹn hò chỉ dành cho những người trên 18 tuổi, bạn đã đủ mạnh để thử?',
+        description: 'Hookup is a dating app for adult only.',
+        // description: 'Hookup là ứng dụng hẹn hò chỉ dành cho những người trên 18 tuổi, bạn đã đủ mạnh để thử?',
         caption: 'get your partner n enjoy your life'
       }
     }

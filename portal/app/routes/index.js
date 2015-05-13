@@ -10,5 +10,8 @@ export default Ember.Route.extend({
     } else {
       this.transitionTo('feed');
     }
+  },
+  goBack: function(){
+    alert('goBack');
   }
 });

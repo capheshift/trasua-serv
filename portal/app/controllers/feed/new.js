@@ -32,6 +32,9 @@ export default Ember.Controller.extend({
     },
     cancel: function(){
       this.transitionTo('feed');
+    },
+    goBack: function(){
+      this.transitionToRoute('feed.index');
     }
   }
 });
