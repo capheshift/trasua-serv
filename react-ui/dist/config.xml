@@ -19,7 +19,7 @@
 
   <gap:plugin name="org.apache.cordova.inappbrowser"
     version="0.6.0" source="plugins.cordova.io" />
-  <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+  <!-- <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" /> -->
 
   <!-- app -->
   <icon src="icon.png" />
@@ -28,8 +28,7 @@
   <!-- portrait only -->
   <preference name="orientation" value="portrait" />
 
-  <preference name="SplashScreen" value="splash" />
-  <preference name="SplashScreenDelay" value="10000" />
-  <preference name="SplashScreenBackgroundColor" value="white" />
-  <!-- <preference name="AutoHideSplashScreen" value="false" /> -->
+  <!-- <preference name="SplashScreen" value="splash" />
+  <preference name="SplashScreenDelay" value="5000" />
+  <preference name="SplashScreenBackgroundColor" value="white" /> -->
 </widget>

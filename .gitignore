@@ -21,3 +21,5 @@ portal/coverage/*
 portal/libpeerconnection.log
 portal/npm-debug.log
 portal/testem.log
+
+react-ui/node_modules
