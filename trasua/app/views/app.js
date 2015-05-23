@@ -4,6 +4,7 @@ var router = require('../router');
 var employeeService = require('../interfaces/service');
 
 var HomePage = require('./home');
+var HomeNewPage = require('./home/new');
 var AboutPage = require('./about');
 var LoginPage = require('./user/login');
 var ZodiacPage = require('./zodiac');
@@ -46,6 +47,10 @@ var APP = React.createClass({
     router.addRoute('', function() {
       var highestLevel = parseInt(localValue.getIndex());
       this.searchHandler(highestLevel);
+    }.bind(this));
+
+    router.addRoute('home/new', function() {
+      this.setState({page: <HomeNewPage/>});
     }.bind(this));
 
     router.addRoute('profile', function() {

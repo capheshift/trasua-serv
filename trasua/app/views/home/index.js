@@ -10,7 +10,7 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div className="home">
-        <Header text="TRÀ SỮA" back="false"/>
+        <Header text="TRÀ SỮA" state="new" link="#home/new"/>
 
         <div id="wrapper">
           <ReactIScroll iscroll={IScroll}>

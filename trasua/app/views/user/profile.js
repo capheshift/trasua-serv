@@ -9,7 +9,7 @@ module.exports = React.createClass({
       <div className="login-page">
         <Header text="TRÀ SỮA" back="true"/>
 
-        <div className="content">
+        <div id="wrapper">
           <div className="container">
             <b>Tư Cuồng</b>
             <p><small>ĐH Công Nghệ Thông Tin.</small></p>

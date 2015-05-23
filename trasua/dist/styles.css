@@ -10,6 +10,9 @@ p {
   font-size: 1em;
   color: black; }
 
+.hidden {
+  display: none; }
+
 header.bar.bar-nav {
   position: absolute; }
 
@@ -22,6 +25,8 @@ header.bar.bar-nav {
   width: 100%;
   background: whitesmoke;
   overflow: hidden; }
+  #wrapper textarea {
+    padding: 4px; }
 
 .loader {
   width: 32px;
@@ -33,7 +38,7 @@ header.bar.bar-nav {
 
 .container {
   background-color: white;
-  height: 100%;
+  min-height: 100px;
   padding: 10px 10px 0px 10px; }
 
 .scroll {
@@ -62,9 +67,6 @@ header.bar.bar-nav {
 
 .tab-item .option-b {
   color: orange; }
-
-.hidden {
-  opacity: 0; }
 
 .media-object.big {
   width: 80px;

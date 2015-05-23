@@ -13,7 +13,26 @@ module.exports = React.createClass({
         <div id="wrapper">
           <ReactIScroll iscroll={IScroll}>
             <div className="container">
-              <p>Match filter</p>
+              <ul class="table-view">
+                <li class="table-view-cell">
+                  Hiển thị người yêu hợp cung
+                  <div class="toggle">
+                    <div class="toggle-handle"></div>
+                  </div>
+                </li>
+                <li class="table-view-cell">
+                  Hiển thì bạn bè hợp cung
+                  <div class="toggle active">
+                    <div class="toggle-handle"></div>
+                  </div>
+                </li>
+                <li class="table-view-cell">
+                  Hiển thị tất cả
+                  <div class="toggle">
+                    <div class="toggle-handle"></div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </ReactIScroll>
         </div>
