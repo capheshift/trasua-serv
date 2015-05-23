@@ -9,17 +9,17 @@ module.exports = React.createClass({
           <span className="icon icon-home"></span>
           <span className="tab-label">trasua</span>
         </a>
-        <a className="tab-item" href="#zodiac">
+        <a className="tab-item" href="#match">
           <span className="icon icon-person"></span>
-          <span className="tab-label">zodiac</span>
+          <span className="tab-label">timban</span>
         </a>
-        <a className="tab-item" href="#invite">
+        <a className="tab-item" href="#zodiac">
           <span className="icon icon-star-filled"></span>
-          <span className="tab-label">loimoi</span>
+          <span className="tab-label">zodiac</span>
         </a>
         <a className="tab-item" href="#about">
           <span className="icon icon-gear"></span>
-          <span className="tab-label">caidat</span>
+          <span className="tab-label">thongtin</span>
         </a>
       </nav>
     );

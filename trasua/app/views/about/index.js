@@ -2,12 +2,12 @@
 var React = require('react/addons');
 var Header = require('../components/header');
 var SearchBar = require('../components/search-bar');
-var EmployeeList = require('../employee/emp-list');
 var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 var Loader = require('halogen/BounceLoader');
 var config = require('../../config');
 var ReactIScroll = require('react-iscroll');
 var IScroll = require('iscroll/build/iscroll');
+var NavBar = require('../components/nav-bar');
 
 module.exports = React.createClass({
   getInitialState: function(){
@@ -42,7 +42,7 @@ module.exports = React.createClass({
           <ReactIScroll iscroll={IScroll}>
             <div className="container">
               <p>
-                #trasua là ứng dụng hẹn hò dựa trên cung hoàng đạo, giúp kết nối những người có số mệnh đã định lại với nhau.
+                #trasua là ứng dụng hẹn hò dựa trên cung hoàng đạo, giúp kết nỗi những người mà số phận đã định lại với nhau.
               </p>
               <small>v0.9.2</small>
               <br/>
@@ -50,13 +50,18 @@ module.exports = React.createClass({
             </div>
             <ul className="table-view">
               <li className="table-view-cell">
+                <a href="#login" className="navigate-right">
+                  <small>Cập nhật profile</small>
+                </a>
+              </li>
+              <li className="table-view-cell">
                 <a className="navigate-right" onClick={this.rateApp}>
                   <small>Đánh giá ứng dụng</small>
                 </a>
               </li>
               <li className="table-view-cell">
                 <a className="navigate-right" onClick={this.shareApp}>
-                  <small>Chia sẻ thành tích</small>
+                  <small>Chia sẻ ứng dụng</small>
                 </a>
               </li>
               <li className="table-view-cell">
@@ -71,28 +76,13 @@ module.exports = React.createClass({
               </li>
             </ul>
 
-            <Loader color="#CA8452" size="32px"/>
+            <div className="loader">
+              <Loader color="#CA8452" size="32px"/>
+            </div>
           </ReactIScroll>
         </div>
 
-        <nav className="bar bar-tab">
-          <a className="tab-item" href="#">
-            <span className="icon icon-home"></span>
-            <span className="tab-label">trasua</span>
-          </a>
-          <a className="tab-item" href="#zodiac">
-            <span className="icon icon-person"></span>
-            <span className="tab-label">zodiac</span>
-          </a>
-          <a className="tab-item" href="#invite">
-            <span className="icon icon-star-filled"></span>
-            <span className="tab-label">loimoi</span>
-          </a>
-          <a className="tab-item" href="#about">
-            <span className="icon icon-gear"></span>
-            <span className="tab-label">caidat</span>
-          </a>
-        </nav>
+        <NavBar/>
       </div>
     );
   }

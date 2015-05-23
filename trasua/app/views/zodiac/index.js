@@ -3,6 +3,7 @@ var React = require('react/addons');
 var Header = require('../components/header');
 var ReactIScroll = require('react-iscroll');
 var IScroll = require('iscroll/build/iscroll');
+var NavBar = require('../components/nav-bar');
 var model = require('../../interfaces/zodiac-data.js').data;
 
 module.exports = React.createClass({
@@ -28,7 +29,7 @@ module.exports = React.createClass({
     });
 
     return (
-      <div className="zodiac-page">
+      <div className="zodiac">
         <Header text="CUNG HOÀNG ĐẠO" back="false"/>
         <div id="wrapper">
           <ReactIScroll iscroll={IScroll}>
@@ -38,24 +39,7 @@ module.exports = React.createClass({
           </ReactIScroll>
         </div>
 
-        <nav className="bar bar-tab">
-          <a className="tab-item" href="#">
-            <span className="icon icon-home"></span>
-            <span className="tab-label">trasua</span>
-          </a>
-          <a className="tab-item" href="#zodiac">
-            <span className="icon icon-person"></span>
-            <span className="tab-label">zodiac</span>
-          </a>
-          <a className="tab-item" href="#invite">
-            <span className="icon icon-star-filled"></span>
-            <span className="tab-label">loimoi</span>
-          </a>
-          <a className="tab-item" href="#about">
-            <span className="icon icon-gear"></span>
-            <span className="tab-label">caidat</span>
-          </a>
-        </nav>
+        <NavBar/>
       </div>
     );
   }

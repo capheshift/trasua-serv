@@ -5,11 +5,9 @@ var Header = require('../components/header');
 module.exports = React.createClass({
   render: function() {
     return (
-      <div className="login-page">
-        <Header text="TRÀ SỮA" back="false"/>
-
+      <div className="login">
         <div className="content">
-          <button id="btn-facebook" className="btn btn-primary">Login by Facebook</button>
+          <button className="btn btn-block btn-outlined">ĐĂNG NHẬP</button>
         </div>
       </div>
     );

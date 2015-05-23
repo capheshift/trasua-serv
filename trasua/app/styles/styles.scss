@@ -28,9 +28,14 @@ header.bar.bar-nav {
   overflow: hidden;
 }
 
-#main .content {
+.loader {
+  width: 32px;
+  margin: 0 auto;
+}
+
+.content {
   position: absolute;
-  padding: 54px 0px;
+  padding: 44px 10px 0px 10px;
 }
 
 .container {
@@ -55,37 +60,23 @@ header.bar.bar-nav {
 .title {
   background-color: #985321;
   color: white;
-  /*font-weight: bold;*/
 }
 
 .bar.bar-nav .icon {
   color: white;
 }
 
-.answer-board {
-  margin-top: 15px;
-}
-
-.answer-board .table-view-cell {
-  padding: 10px;
-  padding-left: 0px;
-}
-
-.answer-board .button {
-  font-weight: bold;
-  margin-right: 10px;
-  color: #5cb85c;
-}
-
-.tab-item:active {
-  background-color: #ddd;
-}
-.tab-item.option-a {
-  color: orange;
-  border-right: 1px solid #ddd;
-}
-.tab-item.option-b {
-  color: orange;
+.tab-item {
+  &:active {
+    background-color: #ddd;
+  }
+  .option-a {
+    color: orange;
+    border-right: 1px solid #ddd;
+  }
+  .option-b {
+    color: orange;
+  }
 }
 
 .hidden {
@@ -111,14 +102,7 @@ header.bar.bar-nav {
   margin: 0;
 }
 
-input[type=search] {
-  border-radius: 8px;
-}
-
-.card {
-  margin-top:54px;
-}
-
+// transition
 .example-enter {
   opacity: 0.01;
   transition: opacity .5s ease-in;
@@ -138,36 +122,51 @@ input[type=search] {
 }
 
 
-.loader {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*Pages*/
-.home-page .table-view {
-  border-top: none;
-  border-bottom: none;
+.login {
+  .btn-block {
+    color: wheat;
+    &:active {
+      color: #B87333;
+      background-color: #DEB887;
+      border-color: whitesmoke;
+    }
+  }
+  .content {
+    background-image: url("./background.jpg");
+    padding: 144px 10px 0px 10px;
+  }
 }
 
-.login-page {
-
+.home {
+  .table-view-cell > a:not(.btn) {
+    padding-right: 30px;
+  }
+  .table-view-cell p {
+    max-height: 44px;
+    overflow: hidden;
+  }
 }
 
-.zodiac-page img {
-  width: 42px;
-  height: 42px;
+.match {
+  .table-view-cell > a:not(.btn) {
+    padding-right: 30px;
+  }
 }
 
-.zodiac-page .table-view {
-  border-top: none;
-  border-bottom: none;
+.zodiac {
+  img {
+    width: 42px;
+    height: 42px;
+  }
 }
 
-.invite-page .table-view {
-  border-top: none;
-  border-bottom: none;
-}
-
-#btn-facebook {
-  margin-top: 150px;
+.zodiac-detail {
+  background-color: red;
+  img {
+    margin-bottom: -5px;
+  }
+  .container {
+    padding-bottom: 30px;
+  }
 }

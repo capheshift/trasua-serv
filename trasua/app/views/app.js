@@ -4,12 +4,12 @@ var router = require('../router');
 var employeeService = require('../interfaces/service');
 
 var HomePage = require('./home');
-var EmployeePage = require('./employee');
 var AboutPage = require('./about');
 var LoginPage = require('./user/login');
 var ZodiacPage = require('./zodiac');
 var ZodiacDetailPage = require('./zodiac/detail');
-var InvitePage = require('./invite');
+var MatchPage = require('./match');
+var MatchFilterPage = require('./match/filter');
 var UserProfilePage = require('./user/profile');
 var AddUserInfo = require('./user/add-info');
 
@@ -60,8 +60,12 @@ var APP = React.createClass({
       this.setState({page: <ZodiacDetailPage zodiacId={id}/>});
     }.bind(this));
 
-    router.addRoute('invite', function() {
-      this.setState({page: <InvitePage/>});
+    router.addRoute('match', function() {
+      this.setState({page: <MatchPage/>});
+    }.bind(this));
+
+    router.addRoute('match/filter', function() {
+      this.setState({page: <MatchFilterPage/>});
     }.bind(this));
 
     router.addRoute('about', function(id) {
