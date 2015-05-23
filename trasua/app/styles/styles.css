@@ -1,0 +1,173 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -ms-touch-action: none;
+}
+
+p {
+  font-size: 1em;
+  color: black;
+}
+
+header.bar.bar-nav {
+  position: absolute;
+}
+
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 44px;
+  bottom: 51px;
+  left: 0;
+  width: 100%;
+  background: whitesmoke;
+  overflow: hidden;
+}
+
+#main .content {
+  position: absolute;
+  padding: 54px 0px;
+}
+
+.container {
+  background-color: white;
+  height: 100%;
+  padding: 10px 10px 0px 10px;
+}
+
+.scroll {
+  min-height: 600px;
+}
+
+.content > .table-view:first-child {
+  margin-top: -2px;
+}
+
+.content p {
+  font-size: 1em;
+  color: black;
+}
+
+.title {
+  background-color: #985321;
+  color: white;
+  /*font-weight: bold;*/
+}
+
+.bar.bar-nav .icon {
+  color: white;
+}
+
+.answer-board {
+  margin-top: 15px;
+}
+
+.answer-board .table-view-cell {
+  padding: 10px;
+  padding-left: 0px;
+}
+
+.answer-board .button {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #5cb85c;
+}
+
+.tab-item:active {
+  background-color: #ddd;
+}
+.tab-item.option-a {
+  color: orange;
+  border-right: 1px solid #ddd;
+}
+.tab-item.option-b {
+  color: orange;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.media-object.big {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+
+.media-object.small {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.table-view-cell h1 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 30px 0 4px 0;
+  margin: 0;
+}
+
+input[type=search] {
+  border-radius: 8px;
+}
+
+.card {
+  margin-top:54px;
+}
+
+.example-enter {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+}
+
+.example-leave {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+}
+
+
+.loader {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Pages*/
+.home-page .table-view {
+  border-top: none;
+  border-bottom: none;
+}
+
+.login-page {
+
+}
+
+.zodiac-page img {
+  width: 42px;
+  height: 42px;
+}
+
+.zodiac-page .table-view {
+  border-top: none;
+  border-bottom: none;
+}
+
+.invite-page .table-view {
+  border-top: none;
+  border-bottom: none;
+}
+
+#btn-facebook {
+  margin-top: 150px;
+}
