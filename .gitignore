@@ -25,3 +25,4 @@ portal/testem.log
 react-ui/node_modules
 
 trasua/node_modules
+trasua/dist

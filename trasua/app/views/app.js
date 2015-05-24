@@ -15,8 +15,8 @@ var UserProfilePage = require('./user/profile');
 var AddUserInfo = require('./user/add-info');
 
 var localValue = require('../interfaces/local-value');
-var page = require('page');
 
+// var page = require('page');
 // var stage = new Navstack({
 //   el: $('#main')
 // });
@@ -41,20 +41,17 @@ var APP = React.createClass({
     }.bind(this));
   },
   componentDidMount: function() {
-    // page('', function() {
-    //   var highestLevel = parseInt(localValue.getIndex());
-    //   this.searchHandler(highestLevel);
-    // });
+    // page('/', function() {
+    //   return (<HomeNewPage/>);
+    // }.bind(this));
 
-    // page('#!/home', function() {
-    //   var highestLevel = parseInt(localValue.getIndex());
-    //   this.searchHandler(highestLevel);
-    // });
+    // page('/home', function() {
+    //   return (<HomeNewPage/>);
+    // }.bind(this));
 
-    // page('#', function() {
-    //   var highestLevel = parseInt(localValue.getIndex());
-    //   this.searchHandler(highestLevel);
-    // });
+    // page('/home/new', function() {
+    //   return (<HomeNewPage/>);
+    // }.bind(this));
 
     // page.start({hashbang: true});
 

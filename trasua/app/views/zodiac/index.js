@@ -6,6 +6,10 @@ var IScroll = require('iscroll/build/iscroll');
 var NavBar = require('../components/nav-bar');
 var model = require('../../interfaces/zodiac-data.js').data;
 
+var scrollOpts = {
+  click: true
+};
+
 module.exports = React.createClass({
   getInitialState: function() {
     console.log('model', model);
@@ -32,7 +36,7 @@ module.exports = React.createClass({
       <div className="zodiac">
         <Header text="CUNG HOÀNG ĐẠO" back="false"/>
         <div id="wrapper">
-          <ReactIScroll iscroll={IScroll}>
+          <ReactIScroll iscroll={IScroll} options={scrollOpts}>
             <ul className="table-view">
               {items}
             </ul>

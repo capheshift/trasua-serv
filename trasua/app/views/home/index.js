@@ -5,6 +5,9 @@ var Loader = require('halogen/BounceLoader');
 var ReactIScroll = require('react-iscroll');
 var IScroll = require('iscroll/build/iscroll');
 var NavBar = require('../components/nav-bar');
+var scrollOpts = {
+  click: true
+};
 
 module.exports = React.createClass({
   render: function() {
@@ -13,7 +16,7 @@ module.exports = React.createClass({
         <Header text="TRÀ SỮA" state="new" link="#home/new"/>
 
         <div id="wrapper">
-          <ReactIScroll iscroll={IScroll}>
+          <ReactIScroll iscroll={IScroll} options={scrollOpts}>
             <ul className="table-view">
               <li className="table-view-cell media">
                 <a href="#profile" className="navigate-right">
@@ -43,7 +46,7 @@ module.exports = React.createClass({
                 </a>
               </li>
               <li className="table-view-cell media">
-                <a className="navigate-right">
+                <a href="#profile" className="navigate-right">
                   <img className="media-object pull-left" src="./images/42x42.gif"/>
                   <div className="media-body">
                     <b>Tam Pham</b>
@@ -52,7 +55,7 @@ module.exports = React.createClass({
                 </a>
               </li>
               <li className="table-view-cell media">
-                <a className="navigate-right">
+                <a href="#profile" className="navigate-right">
                   <img className="media-object pull-left" src="./images/42x42.gif"/>
                   <div className="media-body">
                     <b>Ngân Nguyễn</b>
@@ -61,7 +64,7 @@ module.exports = React.createClass({
                 </a>
               </li>
               <li className="table-view-cell media">
-                <a className="navigate-right">
+                <a href="#profile" className="navigate-right">
                   <img className="media-object pull-left" src="./images/42x42.gif"/>
                   <div className="media-body">
                     <b>Đại Cao</b>
@@ -70,7 +73,7 @@ module.exports = React.createClass({
                 </a>
               </li>
               <li className="table-view-cell media">
-                <a className="navigate-right">
+                <a href="#profile" className="navigate-right">
                   <img className="media-object pull-left" src="./images/42x42.gif"/>
                   <div className="media-body">
                     <b>Phương Bùi</b>
@@ -79,7 +82,7 @@ module.exports = React.createClass({
                 </a>
               </li>
               <li className="table-view-cell media">
-                <a className="navigate-right">
+                <a href="#profile" className="navigate-right">
                   <img className="media-object pull-left" src="./images/42x42.gif"/>
                   <div className="media-body">
                     <b>Nghĩa Nguyễn</b>
@@ -88,7 +91,7 @@ module.exports = React.createClass({
                 </a>
               </li>
               <li className="table-view-cell media">
-                <a className="navigate-right">
+                <a href="#profile" className="navigate-right">
                   <img className="media-object pull-left" src="./images/42x42.gif"/>
                   <div className="media-body">
                     <b>Mặt Mốc</b>

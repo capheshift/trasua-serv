@@ -10,7 +10,7 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div className="home">
-        <Header text="Đăng trạng thái"
+        <Header text="ĐĂNG TRẠNG THÁI"
           leftState="cancel" leftAction=""
           rightState="publish" rightAction=""/>
 
@@ -18,8 +18,9 @@ module.exports = React.createClass({
           <ReactIScroll iscroll={IScroll}>
             <div className="container">
               <form>
-                <textarea rows="4">New status</textarea>
+                <textarea placeholder="Đăng lời tình tứ..." rows="4"></textarea>
               </form>
+              <small>*Trạng thái của bạn sẽ chỉ xuất hiện trong vòng bán kính 3km từ vị trí được đăng.</small>
             </div>
           </ReactIScroll>
         </div>

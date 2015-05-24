@@ -39,7 +39,7 @@ header.bar.bar-nav {
 .container {
   background-color: white;
   min-height: 100px;
-  padding: 10px 10px 0px 10px; }
+  padding: 10px; }
 
 .scroll {
   min-height: 600px; }
@@ -107,7 +107,7 @@ header.bar.bar-nav {
     border-color: whitesmoke; }
 
 .login .content {
-  background-image: url("./background.jpg");
+  background-color: #985321;
   padding: 144px 10px 0px 10px; }
 
 .home .table-view-cell > a:not(.btn) {
