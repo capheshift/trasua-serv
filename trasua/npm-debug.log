@@ -2,213 +2,486 @@
 1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
-1 verbose cli   'react-googlemaps',
-1 verbose cli   '--save' ]
+1 verbose cli   'page',
+1 verbose cli   '--save-dev' ]
 2 info using npm@2.5.1
 3 info using node@v0.12.1
 4 warn package.json flux@0.0.0 No description
 5 warn package.json flux@0.0.0 No repository field.
 6 warn package.json flux@0.0.0 No README data
-7 silly cache add args [ 'react-googlemaps', null ]
-8 verbose cache add spec react-googlemaps
-9 silly cache add parsed spec { raw: 'react-googlemaps',
+7 silly cache add args [ 'page', null ]
+8 verbose cache add spec page
+9 silly cache add parsed spec { raw: 'page',
 9 silly cache add   scope: null,
-9 silly cache add   name: 'react-googlemaps',
+9 silly cache add   name: 'page',
 9 silly cache add   rawSpec: '',
 9 silly cache add   spec: '*',
 9 silly cache add   type: 'range' }
-10 verbose addNamed react-googlemaps@*
+10 verbose addNamed page@*
 11 silly addNamed semver.valid null
 12 silly addNamed semver.validRange *
-13 silly addNameRange { name: 'react-googlemaps', range: '*', hasData: false }
-14 silly mapToRegistry name react-googlemaps
+13 silly addNameRange { name: 'page', range: '*', hasData: false }
+14 silly mapToRegistry name page
 15 silly mapToRegistry using default registry
 16 silly mapToRegistry registry https://registry.npmjs.org/
-17 silly mapToRegistry uri https://registry.npmjs.org/react-googlemaps
-18 verbose addNameRange registry:https://registry.npmjs.org/react-googlemaps not in flight; fetching
-19 verbose request uri https://registry.npmjs.org/react-googlemaps
+17 silly mapToRegistry uri https://registry.npmjs.org/page
+18 verbose addNameRange registry:https://registry.npmjs.org/page not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/page
 20 verbose request no auth needed
-21 info attempt registry request try #1 at 8:40:58 PM
-22 verbose request id 906e9cea363c6780
-23 http request GET https://registry.npmjs.org/react-googlemaps
-24 http 200 https://registry.npmjs.org/react-googlemaps
+21 info attempt registry request try #1 at 11:35:43 PM
+22 verbose request id 4e43225ed103c31e
+23 http request GET https://registry.npmjs.org/page
+24 http 200 https://registry.npmjs.org/page
 25 silly get cb [ 200,
 25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-25 silly get     etag: '"13W7CZT5RY8A4IUBBVUREKGK6"',
+25 silly get     etag: '"6MLJQ4REFFQ7RU2XJHNHYX9HD"',
 25 silly get     'content-type': 'application/json',
 25 silly get     'cache-control': 'max-age=60',
-25 silly get     'content-length': '12302',
+25 silly get     'content-length': '39124',
 25 silly get     'accept-ranges': 'bytes',
-25 silly get     date: 'Sat, 23 May 2015 13:41:03 GMT',
+25 silly get     date: 'Sat, 23 May 2015 16:35:48 GMT',
 25 silly get     via: '1.1 varnish',
 25 silly get     age: '0',
 25 silly get     connection: 'keep-alive',
-25 silly get     'x-served-by': 'cache-lax1428-LAX',
+25 silly get     'x-served-by': 'cache-lax1434-LAX',
 25 silly get     'x-cache': 'MISS',
 25 silly get     'x-cache-hits': '0',
-25 silly get     'x-timer': 'S1432388463.253284,VS0,VE326',
+25 silly get     'x-timer': 'S1432398948.420262,VS0,VE84',
 25 silly get     vary: 'Accept' } ]
-26 verbose get saving react-googlemaps to C:\Users\tampham\AppData\Roaming\npm-cache\registry.npmjs.org\react-googlemaps\.cache.json
-27 silly addNameRange number 2 { name: 'react-googlemaps', range: '*', hasData: true }
-28 silly addNameRange versions [ 'react-googlemaps',
-28 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.2.0', '0.2.1', '0.3.0', '0.4.0' ] ]
-29 verbose addNamed react-googlemaps@0.4.0
-30 silly addNamed semver.valid 0.4.0
-31 silly addNamed semver.validRange 0.4.0
-32 silly mapToRegistry name react-googlemaps
+26 verbose get saving page to C:\Users\tampham\AppData\Roaming\npm-cache\registry.npmjs.org\page\.cache.json
+27 silly addNameRange number 2 { name: 'page', range: '*', hasData: true }
+28 silly addNameRange versions [ 'page',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.1.1',
+28 silly addNameRange     '1.1.2',
+28 silly addNameRange     '1.1.3',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.3.1',
+28 silly addNameRange     '1.3.2',
+28 silly addNameRange     '1.3.3',
+28 silly addNameRange     '1.3.4',
+28 silly addNameRange     '1.3.5',
+28 silly addNameRange     '1.3.6',
+28 silly addNameRange     '1.3.7',
+28 silly addNameRange     '1.4.0',
+28 silly addNameRange     '1.4.1',
+28 silly addNameRange     '1.5.0',
+28 silly addNameRange     '1.6.0',
+28 silly addNameRange     '1.6.1',
+28 silly addNameRange     '1.6.2',
+28 silly addNameRange     '1.6.3' ] ]
+29 verbose addNamed page@1.6.3
+30 silly addNamed semver.valid 1.6.3
+31 silly addNamed semver.validRange 1.6.3
+32 silly mapToRegistry name page
 33 silly mapToRegistry using default registry
 34 silly mapToRegistry registry https://registry.npmjs.org/
-35 silly mapToRegistry uri https://registry.npmjs.org/react-googlemaps
-36 verbose addRemoteTarball https://registry.npmjs.org/react-googlemaps/-/react-googlemaps-0.4.0.tgz not in flight; adding
-37 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-googlemaps/-/react-googlemaps-0.4.0.tgz',
-37 verbose addRemoteTarball   '038b5b8365bc67feb7be9f213f9ff685ea198280' ]
-38 info retry fetch attempt 1 at 8:41:00 PM
-39 info attempt registry request try #1 at 8:41:00 PM
-40 http fetch GET https://registry.npmjs.org/react-googlemaps/-/react-googlemaps-0.4.0.tgz
-41 http fetch 200 https://registry.npmjs.org/react-googlemaps/-/react-googlemaps-0.4.0.tgz
-42 silly fetchAndShaCheck shasum 038b5b8365bc67feb7be9f213f9ff685ea198280
-43 verbose addTmpTarball C:\Users\tampham\AppData\Local\Temp\npm-7940-d9163819\registry.npmjs.org\react-googlemaps\-\react-googlemaps-0.4.0.tgz not in flight; adding
-44 verbose addTmpTarball already have metadata; skipping unpack for react-googlemaps@0.4.0
-45 silly cache afterAdd react-googlemaps@0.4.0
-46 verbose afterAdd C:\Users\tampham\AppData\Roaming\npm-cache\react-googlemaps\0.4.0\package\package.json not in flight; writing
-47 verbose afterAdd C:\Users\tampham\AppData\Roaming\npm-cache\react-googlemaps\0.4.0\package\package.json written
-48 silly install resolved [ { name: 'react-googlemaps',
-48 silly install resolved     version: '0.4.0',
-48 silly install resolved     description: 'A declarative React interface to Google Maps',
-48 silly install resolved     keywords: [ 'react', 'react-component', 'google maps', 'googlemaps', 'maps' ],
-48 silly install resolved     main: 'index.js',
+35 silly mapToRegistry uri https://registry.npmjs.org/page
+36 verbose addRemoteTarball https://registry.npmjs.org/page/-/page-1.6.3.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npmjs.org/page/-/page-1.6.3.tgz',
+37 verbose addRemoteTarball   '16e5bbd83de5e6c410092896d54e2f4172eed1f1' ]
+38 info retry fetch attempt 1 at 11:35:44 PM
+39 info attempt registry request try #1 at 11:35:44 PM
+40 http fetch GET https://registry.npmjs.org/page/-/page-1.6.3.tgz
+41 http fetch 200 https://registry.npmjs.org/page/-/page-1.6.3.tgz
+42 silly fetchAndShaCheck shasum 16e5bbd83de5e6c410092896d54e2f4172eed1f1
+43 verbose addTmpTarball C:\Users\tampham\AppData\Local\Temp\npm-4160-a45963ba\registry.npmjs.org\page\-\page-1.6.3.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for page@1.6.3
+45 silly cache afterAdd page@1.6.3
+46 verbose afterAdd C:\Users\tampham\AppData\Roaming\npm-cache\page\1.6.3\package\package.json not in flight; writing
+47 verbose afterAdd C:\Users\tampham\AppData\Roaming\npm-cache\page\1.6.3\package\package.json written
+48 silly install resolved [ { name: 'page',
+48 silly install resolved     description: 'Tiny client-side router',
+48 silly install resolved     version: '1.6.3',
+48 silly install resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/page.js.git' },
+48 silly install resolved     component: { scripts: [Object] },
 48 silly install resolved     scripts:
-48 silly install resolved      { test: 'jest',
-48 silly install resolved        'build-examples': 'webpack --devtool inline-source-map',
-48 silly install resolved        'watch-examples': 'webpack --devtool inline-source-map --watch' },
-48 silly install resolved     repository:
-48 silly install resolved      { type: 'git',
-48 silly install resolved        url: 'https://github.com/pieterv/react-googlemaps.git' },
-48 silly install resolved     homepage: 'https://github.com/pieterv/react-googlemaps',
-48 silly install resolved     bugs: { url: 'https://github.com/pieterv/react-googlemaps/issues' },
-48 silly install resolved     author: { name: 'Pieter Vanderwerff' },
-48 silly install resolved     license: 'MIT',
+48 silly install resolved      { test: 'jshint index.js test/tests.js && mocha test/tests.js',
+48 silly install resolved        serve: 'serve test',
+48 silly install resolved        'test-cov': 'jscoverage index.js index-cov.js; PAGE_COV=1 mocha test/tests.js -R html-cov > coverage.html',
+48 silly install resolved        prepublish: 'npm run make',
+48 silly install resolved        make: 'browserify index.js --standalone page -o page.js' },
+48 silly install resolved     dependencies: { 'path-to-regexp': '~1.0.1' },
 48 silly install resolved     devDependencies:
-48 silly install resolved      { 'jest-cli': '^0.1.18',
-48 silly install resolved        'jsx-loader': '^0.12.2',
-48 silly install resolved        'react-tools': '^0.12.2',
-48 silly install resolved        webpack: '^1.3.7',
-48 silly install resolved        react: '>=0.12.1' },
-48 silly install resolved     peerDependencies: { react: '>=0.12.1', reactify: '>=0.17.1' },
-48 silly install resolved     jest:
-48 silly install resolved      { scriptPreprocessor: '<rootDir>/preprocessor.js',
-48 silly install resolved        unmockedModulePathPatterns: [Object] },
-48 silly install resolved     browserify: { transform: [Object] },
-48 silly install resolved     gitHead: 'cf12264ed26b27756926ebd35ae5eb18102c9fc8',
-48 silly install resolved     _id: 'react-googlemaps@0.4.0',
-48 silly install resolved     _shasum: '038b5b8365bc67feb7be9f213f9ff685ea198280',
-48 silly install resolved     _from: 'react-googlemaps@*',
-48 silly install resolved     _npmVersion: '2.1.14',
-48 silly install resolved     _nodeVersion: '0.10.35',
-48 silly install resolved     _npmUser: { name: 'pieterv', email: 'me@pieter.io' },
-48 silly install resolved     maintainers: [ [Object], [Object] ],
+48 silly install resolved      { browserify: '^6.3.2',
+48 silly install resolved        chai: '^1.10.0',
+48 silly install resolved        coveralls: '^2.11.2',
+48 silly install resolved        express: '^4.10.2',
+48 silly install resolved        jade: '^1.7.0',
+48 silly install resolved        jscoverage: '^0.5.9',
+48 silly install resolved        jsdom: '^1.3.1',
+48 silly install resolved        jshint: '^2.5.10',
+48 silly install resolved        mocha: '^2.0.1',
+48 silly install resolved        'mocha-lcov-reporter': '0.0.1',
+48 silly install resolved        serve: '*',
+48 silly install resolved        should: '*' },
+48 silly install resolved     files: [ 'index.js', 'page.js' ],
+48 silly install resolved     gitHead: 'd3acfb9770c42e76c00a9c12abdefb627a123999',
+48 silly install resolved     bugs: { url: 'https://github.com/visionmedia/page.js/issues' },
+48 silly install resolved     homepage: 'https://github.com/visionmedia/page.js',
+48 silly install resolved     _id: 'page@1.6.3',
+48 silly install resolved     _shasum: '16e5bbd83de5e6c410092896d54e2f4172eed1f1',
+48 silly install resolved     _from: 'page@*',
+48 silly install resolved     _npmVersion: '2.5.1',
+48 silly install resolved     _nodeVersion: '0.12.1',
+48 silly install resolved     _npmUser: { name: 'shuvalov-anton', email: 'anton_shuvalov@me.com' },
+48 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
 48 silly install resolved     dist:
-48 silly install resolved      { shasum: '038b5b8365bc67feb7be9f213f9ff685ea198280',
-48 silly install resolved        tarball: 'http://registry.npmjs.org/react-googlemaps/-/react-googlemaps-0.4.0.tgz' },
+48 silly install resolved      { shasum: '16e5bbd83de5e6c410092896d54e2f4172eed1f1',
+48 silly install resolved        tarball: 'http://registry.npmjs.org/page/-/page-1.6.3.tgz' },
 48 silly install resolved     directories: {},
-48 silly install resolved     _resolved: 'https://registry.npmjs.org/react-googlemaps/-/react-googlemaps-0.4.0.tgz' } ]
-49 info install react-googlemaps@0.4.0 into e:\CodeLib\sanji\trasua
-50 info installOne react-googlemaps@0.4.0
-51 verbose installOne of react-googlemaps to e:\CodeLib\sanji\trasua not in flight; installing
-52 verbose lock using C:\Users\tampham\AppData\Roaming\npm-cache\_locks\react-googlemaps-a4aac998c46602d8.lock for e:\CodeLib\sanji\trasua\node_modules\react-googlemaps
-53 silly install write writing react-googlemaps 0.4.0 to e:\CodeLib\sanji\trasua\node_modules\react-googlemaps
-54 silly cache addNamed cb react-googlemaps@0.4.0
-55 verbose unbuild node_modules\react-googlemaps
-56 verbose gentlyRm vacuuming e:\CodeLib\sanji\trasua\node_modules\react-googlemaps
-57 verbose tar unpack C:\Users\tampham\AppData\Roaming\npm-cache\react-googlemaps\0.4.0\package.tgz
-58 verbose tar unpacking to e:\CodeLib\sanji\trasua\node_modules\react-googlemaps
-59 verbose gentlyRm vacuuming e:\CodeLib\sanji\trasua\node_modules\react-googlemaps
+48 silly install resolved     _resolved: 'https://registry.npmjs.org/page/-/page-1.6.3.tgz' } ]
+49 info install page@1.6.3 into e:\CodeLib\sanji\trasua
+50 info installOne page@1.6.3
+51 verbose installOne of page to e:\CodeLib\sanji\trasua not in flight; installing
+52 verbose lock using C:\Users\tampham\AppData\Roaming\npm-cache\_locks\page-8b1ba96921aee64a.lock for e:\CodeLib\sanji\trasua\node_modules\page
+53 silly install write writing page 1.6.3 to e:\CodeLib\sanji\trasua\node_modules\page
+54 silly cache addNamed cb page@1.6.3
+55 verbose unbuild node_modules\page
+56 verbose gentlyRm vacuuming e:\CodeLib\sanji\trasua\node_modules\page
+57 verbose tar unpack C:\Users\tampham\AppData\Roaming\npm-cache\page\1.6.3\package.tgz
+58 verbose tar unpacking to e:\CodeLib\sanji\trasua\node_modules\page
+59 verbose gentlyRm vacuuming e:\CodeLib\sanji\trasua\node_modules\page
 60 silly gunzTarPerm modes [ '777', '666' ]
 61 silly gunzTarPerm extractEntry package.json
 62 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-63 silly gunzTarPerm extractEntry .npmignore
-64 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
-65 silly gunzTarPerm extractEntry README.md
-66 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-67 silly gunzTarPerm extractEntry LICENSE
-68 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
-69 silly gunzTarPerm extractEntry index.js
-70 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
-71 silly gunzTarPerm extractEntry .travis.yml
-72 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
-73 silly gunzTarPerm extractEntry CHANGELOG.md
-74 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
-75 silly gunzTarPerm extractEntry docs/api.md
-76 silly gunzTarPerm modified mode [ 'docs/api.md', 420, 438 ]
-77 silly gunzTarPerm extractEntry src/GoogleMapsAPI.js
-78 silly gunzTarPerm modified mode [ 'src/GoogleMapsAPI.js', 420, 438 ]
-79 silly gunzTarPerm extractEntry src/ReactMapComponents.js
-80 silly gunzTarPerm modified mode [ 'src/ReactMapComponents.js', 420, 438 ]
-81 silly gunzTarPerm extractEntry src/__mocks__/GoogleMapsAPI.js
-82 silly gunzTarPerm modified mode [ 'src/__mocks__/GoogleMapsAPI.js', 420, 438 ]
-83 silly gunzTarPerm extractEntry src/eventPlugins/MouseEventPlugin.js
-84 silly gunzTarPerm modified mode [ 'src/eventPlugins/MouseEventPlugin.js', 420, 438 ]
-85 silly gunzTarPerm extractEntry src/eventPlugins/SideEffectEventPlugin.js
-86 silly gunzTarPerm modified mode [ 'src/eventPlugins/SideEffectEventPlugin.js', 420, 438 ]
-87 silly gunzTarPerm extractEntry src/eventPlugins/SimpleEventPlugin.js
-88 silly gunzTarPerm modified mode [ 'src/eventPlugins/SimpleEventPlugin.js', 420, 438 ]
-89 silly gunzTarPerm extractEntry src/ui/MapEvent.js
-90 silly gunzTarPerm modified mode [ 'src/ui/MapEvent.js', 420, 438 ]
-91 silly gunzTarPerm extractEntry src/ui/MapOption.js
-92 silly gunzTarPerm modified mode [ 'src/ui/MapOption.js', 420, 438 ]
-93 silly gunzTarPerm extractEntry src/ui/MapOptionConfig.js
-94 silly gunzTarPerm modified mode [ 'src/ui/MapOptionConfig.js', 420, 438 ]
-95 silly gunzTarPerm extractEntry src/ui/MapPropTypes.js
-96 silly gunzTarPerm modified mode [ 'src/ui/MapPropTypes.js', 420, 438 ]
-97 silly gunzTarPerm extractEntry src/ui/ReactDefaultInjection.js
-98 silly gunzTarPerm modified mode [ 'src/ui/ReactDefaultInjection.js', 420, 438 ]
-99 silly gunzTarPerm extractEntry src/ui/ReactMapComponent.js
-100 silly gunzTarPerm modified mode [ 'src/ui/ReactMapComponent.js', 420, 438 ]
-101 silly gunzTarPerm extractEntry src/ui/ReactMapComponentMixin.js
-102 silly gunzTarPerm modified mode [ 'src/ui/ReactMapComponentMixin.js', 420, 438 ]
-103 silly gunzTarPerm extractEntry src/ui/components/ReactFrag.js
-104 silly gunzTarPerm modified mode [ 'src/ui/components/ReactFrag.js', 420, 438 ]
-105 silly gunzTarPerm extractEntry src/ui/components/ReactMap.js
-106 silly gunzTarPerm modified mode [ 'src/ui/components/ReactMap.js', 420, 438 ]
-107 silly gunzTarPerm extractEntry src/ui/components/ReactOverlayView.js
-108 silly gunzTarPerm modified mode [ 'src/ui/components/ReactOverlayView.js', 420, 438 ]
-109 silly gunzTarPerm extractEntry src/utils/PropTypeUtils.js
-110 silly gunzTarPerm modified mode [ 'src/utils/PropTypeUtils.js', 420, 438 ]
-111 info preinstall react-googlemaps@0.4.0
-112 silly prepareForInstallMany adding reactify@>=0.17.1 from react-googlemaps peerDependencies
-113 silly install resolved []
-114 verbose about to build e:\CodeLib\sanji\trasua\node_modules\react-googlemaps
-115 info build e:\CodeLib\sanji\trasua\node_modules\react-googlemaps
-116 verbose linkStuff [ false,
-116 verbose linkStuff   false,
-116 verbose linkStuff   false,
-116 verbose linkStuff   'e:\\CodeLib\\sanji\\trasua\\node_modules' ]
-117 info linkStuff react-googlemaps@0.4.0
-118 verbose linkBins react-googlemaps@0.4.0
-119 verbose linkMans react-googlemaps@0.4.0
-120 verbose rebuildBundles react-googlemaps@0.4.0
-121 info install react-googlemaps@0.4.0
-122 info postinstall react-googlemaps@0.4.0
-123 verbose already installed skipping reactify@>=0.17.1 e:\CodeLib\sanji\trasua
-124 silly install resolved []
-125 verbose unlock done using C:\Users\tampham\AppData\Roaming\npm-cache\_locks\react-googlemaps-a4aac998c46602d8.lock for e:\CodeLib\sanji\trasua\node_modules\react-googlemaps
-126 verbose stack Error: The package reactify does not satisfy its siblings' peerDependencies requirements!
-126 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:103:32
-126 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:225:5
-126 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:138:5
-126 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
-126 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-126 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
-126 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-126 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
-126 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
-126 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
-127 verbose cwd e:\CodeLib\sanji\trasua
-128 error Windows_NT 6.3.9600
-129 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "react-googlemaps" "--save"
-130 error node v0.12.1
-131 error npm  v2.5.1
-132 error code EPEERINVALID
-133 error peerinvalid The package reactify does not satisfy its siblings' peerDependencies requirements!
-133 error peerinvalid Peer react-googlemaps@0.4.0 wants reactify@>=0.17.1
-134 verbose exit [ 1, true ]
+63 silly gunzTarPerm extractEntry index.js
+64 silly gunzTarPerm modified mode [ 'index.js', 493, 511 ]
+65 silly gunzTarPerm extractEntry page.js
+66 silly gunzTarPerm modified mode [ 'page.js', 420, 438 ]
+67 silly gunzTarPerm extractEntry History.md
+68 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+69 silly gunzTarPerm extractEntry Readme.md
+70 silly gunzTarPerm modified mode [ 'Readme.md', 420, 438 ]
+71 info preinstall page@1.6.3
+72 silly prepareForInstallMany adding path-to-regexp@~1.0.1 from page dependencies
+73 silly cache add args [ 'path-to-regexp@~1.0.1', null ]
+74 verbose cache add spec path-to-regexp@~1.0.1
+75 silly cache add parsed spec { raw: 'path-to-regexp@~1.0.1',
+75 silly cache add   scope: null,
+75 silly cache add   name: 'path-to-regexp',
+75 silly cache add   rawSpec: '~1.0.1',
+75 silly cache add   spec: '>=1.0.1 <1.1.0',
+75 silly cache add   type: 'range' }
+76 verbose addNamed path-to-regexp@>=1.0.1 <1.1.0
+77 silly addNamed semver.valid null
+78 silly addNamed semver.validRange >=1.0.1 <1.1.0
+79 silly addNameRange { name: 'path-to-regexp',
+79 silly addNameRange   range: '>=1.0.1 <1.1.0',
+79 silly addNameRange   hasData: false }
+80 silly mapToRegistry name path-to-regexp
+81 silly mapToRegistry using default registry
+82 silly mapToRegistry registry https://registry.npmjs.org/
+83 silly mapToRegistry uri https://registry.npmjs.org/path-to-regexp
+84 verbose addNameRange registry:https://registry.npmjs.org/path-to-regexp not in flight; fetching
+85 verbose request uri https://registry.npmjs.org/path-to-regexp
+86 verbose request no auth needed
+87 info attempt registry request try #1 at 11:35:46 PM
+88 verbose etag "2VWLEDVEUGGDHN87WYAVI42OD"
+89 http request GET https://registry.npmjs.org/path-to-regexp
+90 http 200 https://registry.npmjs.org/path-to-regexp
+91 silly get cb [ 200,
+91 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+91 silly get     etag: '"9BIX58SFLBXXZ22PF61ETXJRF"',
+91 silly get     'content-type': 'application/json',
+91 silly get     'cache-control': 'max-age=60',
+91 silly get     'content-length': '59076',
+91 silly get     'accept-ranges': 'bytes',
+91 silly get     date: 'Sat, 23 May 2015 16:35:50 GMT',
+91 silly get     via: '1.1 varnish',
+91 silly get     age: '7',
+91 silly get     connection: 'keep-alive',
+91 silly get     'x-served-by': 'cache-lax1425-LAX',
+91 silly get     'x-cache': 'HIT',
+91 silly get     'x-cache-hits': '1',
+91 silly get     'x-timer': 'S1432398950.899156,VS0,VE0',
+91 silly get     vary: 'Accept' } ]
+92 verbose get saving path-to-regexp to C:\Users\tampham\AppData\Roaming\npm-cache\registry.npmjs.org\path-to-regexp\.cache.json
+93 silly addNameRange number 2 { name: 'path-to-regexp',
+93 silly addNameRange   range: '>=1.0.1 <1.1.0',
+93 silly addNameRange   hasData: true }
+94 silly addNameRange versions [ 'path-to-regexp',
+94 silly addNameRange   [ '0.0.1',
+94 silly addNameRange     '0.0.2',
+94 silly addNameRange     '0.1.0',
+94 silly addNameRange     '0.1.1',
+94 silly addNameRange     '0.1.2',
+94 silly addNameRange     '0.2.0',
+94 silly addNameRange     '0.2.1',
+94 silly addNameRange     '0.1.3',
+94 silly addNameRange     '0.2.2',
+94 silly addNameRange     '0.2.3',
+94 silly addNameRange     '0.2.4',
+94 silly addNameRange     '0.2.5',
+94 silly addNameRange     '1.0.0',
+94 silly addNameRange     '1.0.1',
+94 silly addNameRange     '1.0.2',
+94 silly addNameRange     '1.0.3',
+94 silly addNameRange     '0.1.4',
+94 silly addNameRange     '0.1.5',
+94 silly addNameRange     '1.1.0',
+94 silly addNameRange     '1.1.1',
+94 silly addNameRange     '1.2.0' ] ]
+95 verbose addNamed path-to-regexp@1.0.3
+96 silly addNamed semver.valid 1.0.3
+97 silly addNamed semver.validRange 1.0.3
+98 silly mapToRegistry name path-to-regexp
+99 silly mapToRegistry using default registry
+100 silly mapToRegistry registry https://registry.npmjs.org/
+101 silly mapToRegistry uri https://registry.npmjs.org/path-to-regexp
+102 verbose addRemoteTarball https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.0.3.tgz not in flight; adding
+103 verbose addRemoteTarball [ 'https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.0.3.tgz',
+103 verbose addRemoteTarball   'eea5a32cf82b7141d4987bfe7e0557990e2d260e' ]
+104 info retry fetch attempt 1 at 11:35:47 PM
+105 info attempt registry request try #1 at 11:35:47 PM
+106 http fetch GET https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.0.3.tgz
+107 http fetch 200 https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.0.3.tgz
+108 silly fetchAndShaCheck shasum eea5a32cf82b7141d4987bfe7e0557990e2d260e
+109 verbose addTmpTarball C:\Users\tampham\AppData\Local\Temp\npm-4160-a45963ba\registry.npmjs.org\path-to-regexp\-\path-to-regexp-1.0.3.tgz not in flight; adding
+110 verbose addTmpTarball already have metadata; skipping unpack for path-to-regexp@1.0.3
+111 silly cache afterAdd path-to-regexp@1.0.3
+112 verbose afterAdd C:\Users\tampham\AppData\Roaming\npm-cache\path-to-regexp\1.0.3\package\package.json not in flight; writing
+113 verbose afterAdd C:\Users\tampham\AppData\Roaming\npm-cache\path-to-regexp\1.0.3\package\package.json written
+114 silly install resolved [ { name: 'path-to-regexp',
+114 silly install resolved     description: 'Express style path to RegExp utility',
+114 silly install resolved     version: '1.0.3',
+114 silly install resolved     files: [ 'index.js', 'LICENSE' ],
+114 silly install resolved     scripts: { test: 'istanbul cover node_modules/mocha/bin/_mocha -- -R spec' },
+114 silly install resolved     keywords: [ 'express', 'regexp', 'route', 'routing' ],
+114 silly install resolved     component: { scripts: [Object] },
+114 silly install resolved     license: 'MIT',
+114 silly install resolved     repository:
+114 silly install resolved      { type: 'git',
+114 silly install resolved        url: 'https://github.com/pillarjs/path-to-regexp.git' },
+114 silly install resolved     devDependencies: { istanbul: '~0.3.0', mocha: '~1.21.4' },
+114 silly install resolved     dependencies: { isarray: '0.0.1' },
+114 silly install resolved     gitHead: 'a76d908bf45b1534f10701bc5ba0f40567097274',
+114 silly install resolved     bugs: { url: 'https://github.com/pillarjs/path-to-regexp/issues' },
+114 silly install resolved     homepage: 'https://github.com/pillarjs/path-to-regexp',
+114 silly install resolved     _id: 'path-to-regexp@1.0.3',
+114 silly install resolved     _shasum: 'eea5a32cf82b7141d4987bfe7e0557990e2d260e',
+114 silly install resolved     _from: 'path-to-regexp@>=1.0.1 <1.1.0',
+114 silly install resolved     _npmVersion: '2.1.17',
+114 silly install resolved     _nodeVersion: '0.11.14',
+114 silly install resolved     _npmUser: { name: 'blakeembrey', email: 'hello@blakeembrey.com' },
+114 silly install resolved     maintainers:
+114 silly install resolved      [ [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object],
+114 silly install resolved        [Object] ],
+114 silly install resolved     dist:
+114 silly install resolved      { shasum: 'eea5a32cf82b7141d4987bfe7e0557990e2d260e',
+114 silly install resolved        tarball: 'http://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.0.3.tgz' },
+114 silly install resolved     directories: {},
+114 silly install resolved     _resolved: 'https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-1.0.3.tgz' } ]
+115 info install path-to-regexp@1.0.3 into e:\CodeLib\sanji\trasua\node_modules\page
+116 info installOne path-to-regexp@1.0.3
+117 verbose installOne of path-to-regexp to e:\CodeLib\sanji\trasua\node_modules\page not in flight; installing
+118 verbose lock using C:\Users\tampham\AppData\Roaming\npm-cache\_locks\path-to-regexp-7b01a75dae3698d3.lock for e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp
+119 silly install write writing path-to-regexp 1.0.3 to e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp
+120 silly cache addNamed cb path-to-regexp@1.0.3
+121 verbose unbuild node_modules\page\node_modules\path-to-regexp
+122 verbose gentlyRm vacuuming e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp
+123 verbose tar unpack C:\Users\tampham\AppData\Roaming\npm-cache\path-to-regexp\1.0.3\package.tgz
+124 verbose tar unpacking to e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp
+125 verbose gentlyRm vacuuming e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp
+126 silly gunzTarPerm modes [ '777', '666' ]
+127 silly gunzTarPerm extractEntry package.json
+128 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+129 silly gunzTarPerm extractEntry LICENSE
+130 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+131 silly gunzTarPerm extractEntry index.js
+132 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+133 silly gunzTarPerm extractEntry Readme.md
+134 silly gunzTarPerm modified mode [ 'Readme.md', 420, 438 ]
+135 silly gunzTarPerm extractEntry History.md
+136 silly gunzTarPerm modified mode [ 'History.md', 420, 438 ]
+137 info preinstall path-to-regexp@1.0.3
+138 silly prepareForInstallMany adding isarray@0.0.1 from path-to-regexp dependencies
+139 silly cache add args [ 'isarray@0.0.1', null ]
+140 verbose cache add spec isarray@0.0.1
+141 silly cache add parsed spec { raw: 'isarray@0.0.1',
+141 silly cache add   scope: null,
+141 silly cache add   name: 'isarray',
+141 silly cache add   rawSpec: '0.0.1',
+141 silly cache add   spec: '0.0.1',
+141 silly cache add   type: 'version' }
+142 verbose addNamed isarray@0.0.1
+143 silly addNamed semver.valid 0.0.1
+144 silly addNamed semver.validRange 0.0.1
+145 silly mapToRegistry name isarray
+146 silly mapToRegistry using default registry
+147 silly mapToRegistry registry https://registry.npmjs.org/
+148 silly mapToRegistry uri https://registry.npmjs.org/isarray
+149 verbose addNameVersion registry:https://registry.npmjs.org/isarray not in flight; fetching
+150 verbose request uri https://registry.npmjs.org/isarray
+151 verbose request no auth needed
+152 info attempt registry request try #1 at 11:35:48 PM
+153 verbose etag "79XQA3ZXVF5QN0X2VYCD81HMN"
+154 http request GET https://registry.npmjs.org/isarray
+155 http 304 https://registry.npmjs.org/isarray
+156 silly get cb [ 304,
+156 silly get   { date: 'Sat, 23 May 2015 16:35:52 GMT',
+156 silly get     via: '1.1 varnish',
+156 silly get     'cache-control': 'max-age=60',
+156 silly get     etag: '"79XQA3ZXVF5QN0X2VYCD81HMN"',
+156 silly get     age: '26',
+156 silly get     connection: 'keep-alive',
+156 silly get     'x-served-by': 'cache-lax1426-LAX',
+156 silly get     'x-cache': 'HIT',
+156 silly get     'x-cache-hits': '3',
+156 silly get     'x-timer': 'S1432398952.993552,VS0,VE0',
+156 silly get     vary: 'Accept' } ]
+157 verbose etag https://registry.npmjs.org/isarray from cache
+158 verbose get saving isarray to C:\Users\tampham\AppData\Roaming\npm-cache\registry.npmjs.org\isarray\.cache.json
+159 silly cache afterAdd isarray@0.0.1
+160 verbose afterAdd C:\Users\tampham\AppData\Roaming\npm-cache\isarray\0.0.1\package\package.json not in flight; writing
+161 verbose afterAdd C:\Users\tampham\AppData\Roaming\npm-cache\isarray\0.0.1\package\package.json written
+162 silly install resolved [ { name: 'isarray',
+162 silly install resolved     description: 'Array#isArray for older browsers',
+162 silly install resolved     version: '0.0.1',
+162 silly install resolved     repository:
+162 silly install resolved      { type: 'git',
+162 silly install resolved        url: 'git://github.com/juliangruber/isarray.git' },
+162 silly install resolved     homepage: 'https://github.com/juliangruber/isarray',
+162 silly install resolved     main: 'index.js',
+162 silly install resolved     scripts: { test: 'tap test/*.js' },
+162 silly install resolved     dependencies: {},
+162 silly install resolved     devDependencies: { tap: '*' },
+162 silly install resolved     keywords: [ 'browser', 'isarray', 'array' ],
+162 silly install resolved     author:
+162 silly install resolved      { name: 'Julian Gruber',
+162 silly install resolved        email: 'mail@juliangruber.com',
+162 silly install resolved        url: 'http://juliangruber.com' },
+162 silly install resolved     license: 'MIT',
+162 silly install resolved     _id: 'isarray@0.0.1',
+162 silly install resolved     dist:
+162 silly install resolved      { shasum: '8a18acfca9a8f4177e09abfc6038939b05d1eedf',
+162 silly install resolved        tarball: 'http://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz' },
+162 silly install resolved     _from: 'isarray@0.0.1',
+162 silly install resolved     _npmVersion: '1.2.18',
+162 silly install resolved     _npmUser: { name: 'juliangruber', email: 'julian@juliangruber.com' },
+162 silly install resolved     maintainers: [ [Object] ],
+162 silly install resolved     directories: {},
+162 silly install resolved     _shasum: '8a18acfca9a8f4177e09abfc6038939b05d1eedf',
+162 silly install resolved     _resolved: 'https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz',
+162 silly install resolved     bugs: { url: 'https://github.com/juliangruber/isarray/issues' },
+162 silly install resolved     readme: 'ERROR: No README data found!' } ]
+163 info install isarray@0.0.1 into e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp
+164 info installOne isarray@0.0.1
+165 verbose installOne of isarray to e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp not in flight; installing
+166 verbose lock using C:\Users\tampham\AppData\Roaming\npm-cache\_locks\isarray-d772f14d80f7cd08.lock for e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp\node_modules\isarray
+167 silly install write writing isarray 0.0.1 to e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp\node_modules\isarray
+168 silly cache addNamed cb isarray@0.0.1
+169 verbose unbuild node_modules\page\node_modules\path-to-regexp\node_modules\isarray
+170 verbose gentlyRm vacuuming e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp\node_modules\isarray
+171 verbose tar unpack C:\Users\tampham\AppData\Roaming\npm-cache\isarray\0.0.1\package.tgz
+172 verbose tar unpacking to e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp\node_modules\isarray
+173 verbose gentlyRm vacuuming e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp\node_modules\isarray
+174 silly gunzTarPerm modes [ '777', '666' ]
+175 silly gunzTarPerm extractEntry package.json
+176 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+177 silly gunzTarPerm extractEntry README.md
+178 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+179 silly gunzTarPerm extractEntry index.js
+180 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+181 silly gunzTarPerm extractEntry build/build.js
+182 silly gunzTarPerm modified mode [ 'build/build.js', 420, 438 ]
+183 silly gunzTarPerm extractEntry component.json
+184 silly gunzTarPerm modified mode [ 'component.json', 420, 438 ]
+185 info preinstall isarray@0.0.1
+186 silly install resolved []
+187 verbose about to build e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp\node_modules\isarray
+188 info build e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp\node_modules\isarray
+189 verbose linkStuff [ false,
+189 verbose linkStuff   false,
+189 verbose linkStuff   false,
+189 verbose linkStuff   'e:\\CodeLib\\sanji\\trasua\\node_modules\\page\\node_modules\\path-to-regexp\\node_modules' ]
+190 info linkStuff isarray@0.0.1
+191 verbose linkBins isarray@0.0.1
+192 verbose linkMans isarray@0.0.1
+193 verbose rebuildBundles isarray@0.0.1
+194 info install isarray@0.0.1
+195 info postinstall isarray@0.0.1
+196 verbose unlock done using C:\Users\tampham\AppData\Roaming\npm-cache\_locks\isarray-d772f14d80f7cd08.lock for e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp\node_modules\isarray
+197 verbose about to build e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp
+198 info build e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp
+199 verbose linkStuff [ false,
+199 verbose linkStuff   false,
+199 verbose linkStuff   false,
+199 verbose linkStuff   'e:\\CodeLib\\sanji\\trasua\\node_modules\\page\\node_modules' ]
+200 info linkStuff path-to-regexp@1.0.3
+201 verbose linkBins path-to-regexp@1.0.3
+202 verbose linkMans path-to-regexp@1.0.3
+203 verbose rebuildBundles path-to-regexp@1.0.3
+204 verbose rebuildBundles [ 'isarray' ]
+205 info install path-to-regexp@1.0.3
+206 info postinstall path-to-regexp@1.0.3
+207 verbose unlock done using C:\Users\tampham\AppData\Roaming\npm-cache\_locks\path-to-regexp-7b01a75dae3698d3.lock for e:\CodeLib\sanji\trasua\node_modules\page\node_modules\path-to-regexp
+208 verbose about to build e:\CodeLib\sanji\trasua\node_modules\page
+209 info build e:\CodeLib\sanji\trasua\node_modules\page
+210 verbose linkStuff [ false,
+210 verbose linkStuff   false,
+210 verbose linkStuff   false,
+210 verbose linkStuff   'e:\\CodeLib\\sanji\\trasua\\node_modules' ]
+211 info linkStuff page@1.6.3
+212 verbose linkBins page@1.6.3
+213 verbose linkMans page@1.6.3
+214 verbose rebuildBundles page@1.6.3
+215 verbose rebuildBundles [ 'path-to-regexp' ]
+216 info install page@1.6.3
+217 info postinstall page@1.6.3
+218 verbose unlock done using C:\Users\tampham\AppData\Roaming\npm-cache\_locks\page-8b1ba96921aee64a.lock for e:\CodeLib\sanji\trasua\node_modules\page
+219 verbose stack Error: The package reactify does not satisfy its siblings' peerDependencies requirements!
+219 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:103:32
+219 verbose stack     at c:\Program Files\nodejs\node_modules\npm\lib\install.js:225:5
+219 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:138:5
+219 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+219 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+219 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+219 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+219 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+219 verbose stack     at cb (c:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\async-map.js:47:24)
+219 verbose stack     at c:\Program Files\nodejs\node_modules\npm\node_modules\read-installed\read-installed.js:251:14
+220 verbose cwd e:\CodeLib\sanji\trasua
+221 error Windows_NT 6.3.9600
+222 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "page" "--save-dev"
+223 error node v0.12.1
+224 error npm  v2.5.1
+225 error code EPEERINVALID
+226 error peerinvalid The package reactify does not satisfy its siblings' peerDependencies requirements!
+226 error peerinvalid Peer react-googlemaps@0.4.0 wants reactify@>=0.17.1
+227 verbose exit [ 1, true ]

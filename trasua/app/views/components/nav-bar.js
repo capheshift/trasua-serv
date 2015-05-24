@@ -15,7 +15,7 @@ module.exports = React.createClass({
         </a>
         <a className="tab-item" href="#zodiac">
           <span className="icon icon-star-filled"></span>
-          <span className="tab-label">zodiac</span>
+          <span className="tab-label">sao</span>
         </a>
         <a className="tab-item" href="#about">
           <span className="icon icon-gear"></span>

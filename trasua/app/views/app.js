@@ -15,6 +15,11 @@ var UserProfilePage = require('./user/profile');
 var AddUserInfo = require('./user/add-info');
 
 var localValue = require('../interfaces/local-value');
+var page = require('page');
+
+// var stage = new Navstack({
+//   el: $('#main')
+// });
 
 var APP = React.createClass({
   getInitialState: function() {
@@ -36,13 +41,22 @@ var APP = React.createClass({
     }.bind(this));
   },
   componentDidMount: function() {
-    router.addRoute('login', function() {
-      this.setState({page: <LoginPage/>});
-    }.bind(this));
+    // page('', function() {
+    //   var highestLevel = parseInt(localValue.getIndex());
+    //   this.searchHandler(highestLevel);
+    // });
 
-    router.addRoute('add-info', function() {
-      this.setState({page: <AddUserInfo/>});
-    }.bind(this));
+    // page('#!/home', function() {
+    //   var highestLevel = parseInt(localValue.getIndex());
+    //   this.searchHandler(highestLevel);
+    // });
+
+    // page('#', function() {
+    //   var highestLevel = parseInt(localValue.getIndex());
+    //   this.searchHandler(highestLevel);
+    // });
+
+    // page.start({hashbang: true});
 
     router.addRoute('', function() {
       var highestLevel = parseInt(localValue.getIndex());
@@ -51,6 +65,14 @@ var APP = React.createClass({
 
     router.addRoute('home/new', function() {
       this.setState({page: <HomeNewPage/>});
+    }.bind(this));
+
+    router.addRoute('login', function() {
+      this.setState({page: <LoginPage/>});
+    }.bind(this));
+
+    router.addRoute('add-info', function() {
+      this.setState({page: <AddUserInfo/>});
     }.bind(this));
 
     router.addRoute('profile', function() {
