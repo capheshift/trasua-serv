@@ -2,13 +2,10 @@
 
 var React = require('react');
 var APP = require('./views/app');
-var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
 var initApp = function(){
   React.renderComponent(
-    <ReactCSSTransitionGroup transitionName="example">
-      <APP/>
-    </ReactCSSTransitionGroup>,
+    <APP/>,
     document.getElementById('main'));
 };
 
