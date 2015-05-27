@@ -7,12 +7,15 @@ var IScroll = require('iscroll/build/iscroll');
 var NavBar = require('../components/nav-bar');
 
 module.exports = React.createClass({
+  rightAction: function(){
+    window.location.hash = '#';
+  },
   render: function() {
     return (
       <div className="home">
         <Header text="ĐĂNG TRẠNG THÁI"
           leftState="cancel" leftAction=""
-          rightState="publish" rightAction=""/>
+          rightState="publish" rightAction={this.rightAction} />
 
         <div id="wrapper">
           <ReactIScroll iscroll={IScroll}>

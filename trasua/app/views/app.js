@@ -1,7 +1,6 @@
 /** @jsx React.DOM */
 var React = require('react/addons');
 var router = require('../router');
-var employeeService = require('../interfaces/service');
 
 var HomePage = require('./home');
 var HomeNewPage = require('./home/new');
@@ -14,8 +13,6 @@ var MatchFilterPage = require('./match/filter');
 var UserProfilePage = require('./user/profile');
 var AddUserInfo = require('./user/add-info');
 
-var localValue = require('../interfaces/local-value');
-
 // var page = require('page');
 // var stage = new Navstack({
 //   el: $('#main')
@@ -24,21 +21,8 @@ var localValue = require('../interfaces/local-value');
 var APP = React.createClass({
   getInitialState: function() {
     return {
-      searchKey: '',
-      currentIndex: 1,
-      currentQuestion: {question: 'uuu'},
-      employees: [],
       page: <p></p>
     }
-  },
-  searchHandler: function(index) {
-    if (index >= 10) index = 0;
-    localValue.setIndex(index);
-    employeeService.findNext(index).done(function(data) {
-      this.setState({
-        currentQuestion: data,
-        page: <HomePage searchHandler={this.searchHandler} currentQuestion={data}/>});
-    }.bind(this));
   },
   componentDidMount: function() {
     // page('/', function() {
@@ -56,8 +40,7 @@ var APP = React.createClass({
     // page.start({hashbang: true});
 
     router.addRoute('', function() {
-      var highestLevel = parseInt(localValue.getIndex());
-      this.searchHandler(highestLevel);
+      this.setState({page: <HomePage/>});
     }.bind(this));
 
     router.addRoute('home/new', function() {

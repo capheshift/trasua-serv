@@ -21,6 +21,7 @@ getAll = (req, res) ->
 
 getByFacebookId = (req, res) ->
   query = req.query
+  console.log 'query', query
   debug 'query', query
   UserBLL.getByFacebookId(query).then (data) ->
     debug 'data', data

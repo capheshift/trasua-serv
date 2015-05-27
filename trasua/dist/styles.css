@@ -27,6 +27,8 @@ header.bar.bar-nav {
   overflow: hidden; }
   #wrapper textarea {
     padding: 4px; }
+  #wrapper input {
+    padding: 4px; }
 
 .loader {
   width: 32px;

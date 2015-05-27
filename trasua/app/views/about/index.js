@@ -4,10 +4,11 @@ var Header = require('../components/header');
 var SearchBar = require('../components/search-bar');
 var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 var Loader = require('halogen/BounceLoader');
-var config = require('../../config');
 var ReactIScroll = require('react-iscroll');
 var IScroll = require('iscroll/build/iscroll');
 var NavBar = require('../components/nav-bar');
+
+var config = require('../../config');
 
 module.exports = React.createClass({
   getInitialState: function(){

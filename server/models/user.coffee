@@ -26,6 +26,12 @@ UserSchema = new Schema
   birthday:
     type: Date
 
+  school:
+    type: String
+
+  bio:
+    type: String
+
   avatar:
     type: String
 
