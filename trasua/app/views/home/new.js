@@ -21,7 +21,7 @@ module.exports = React.createClass({
           <ReactIScroll iscroll={IScroll}>
             <div className="container">
               <form>
-                <textarea placeholder="Đăng lời tình tứ..." rows="4"></textarea>
+                <textarea placeholder="Cập nhật trang thái..." rows="4"></textarea>
               </form>
               <small>*Trạng thái của bạn sẽ chỉ xuất hiện trong vòng bán kính 3km từ vị trí được đăng.</small>
             </div>

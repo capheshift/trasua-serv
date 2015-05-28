@@ -112,6 +112,9 @@ header.bar.bar-nav {
   background-color: #985321;
   padding: 144px 10px 0px 10px; }
 
+.profile p {
+  margin-top: 10px; }
+
 .home .table-view-cell > a:not(.btn) {
   padding-right: 30px; }
 

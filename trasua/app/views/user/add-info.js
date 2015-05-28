@@ -42,8 +42,9 @@ module.exports = React.createClass({
     });
   },
   update: function(){
-    var model = this.state.model;
+    this.setState({isLoading: true});
 
+    var model = this.state.model;
     model.phoneNumber = this.refs.phoneNumber.getDOMNode().value;
     model.school = this.refs.school.getDOMNode().value;
     model.bio = this.refs.bio.getDOMNode().value;

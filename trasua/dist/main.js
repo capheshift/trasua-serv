@@ -719,7 +719,7 @@ module.exports = React.createClass({displayName: 'exports',
           ReactIScroll({iscroll: IScroll}, 
             React.DOM.div({className: "container"}, 
               React.DOM.form(null, 
-                React.DOM.textarea({placeholder: "Đăng lời tình tứ...", rows: "4"})
+                React.DOM.textarea({placeholder: "Cập nhật trang thái...", rows: "4"})
               ), 
               React.DOM.small(null, "*Trạng thái của bạn sẽ chỉ xuất hiện trong vòng bán kính 3km từ vị trí được đăng.")
             )
@@ -781,7 +781,7 @@ module.exports = React.createClass({displayName: 'exports',
                   React.DOM.img({className: "media-object pull-left", src: "./images/42x42.gif"}), 
                   React.DOM.div({className: "media-body"}, 
                     React.DOM.b(null, "Tư Cuồng"), 
-                    React.DOM.p(null, React.DOM.small(null, "ĐH Công Nghệ Thông Tin."))
+                    React.DOM.p(null, React.DOM.small(null, "Nam - Ma Kết - 18t"))
                   )
                 )
               ), 
@@ -790,7 +790,7 @@ module.exports = React.createClass({displayName: 'exports',
                   React.DOM.img({className: "media-object pull-left", src: "./images/42x42.gif"}), 
                   React.DOM.div({className: "media-body"}, 
                     React.DOM.b(null, "Tam Pham"), 
-                    React.DOM.p(null, React.DOM.small(null, "ĐH Công Nghệ Thông Tin."))
+                    React.DOM.p(null, React.DOM.small(null, "Nam - Ma Kết - 18t"))
                   )
                 )
               ), 
@@ -799,7 +799,7 @@ module.exports = React.createClass({displayName: 'exports',
                   React.DOM.img({className: "media-object pull-left", src: "./images/42x42.gif"}), 
                   React.DOM.div({className: "media-body"}, 
                     React.DOM.b(null, "Ngân Nguyễn"), 
-                    React.DOM.p(null, React.DOM.small(null, "ĐH Công Nghệ Thông Tin."))
+                    React.DOM.p(null, React.DOM.small(null, "Nam - Ma Kết - 18t"))
                   )
                 )
               )
@@ -858,8 +858,9 @@ module.exports = React.createClass({displayName: 'exports',
     });
   },
   update: function(){
-    var model = this.state.model;
+    this.setState({isLoading: true});
 
+    var model = this.state.model;
     model.phoneNumber = this.refs.phoneNumber.getDOMNode().value;
     model.school = this.refs.school.getDOMNode().value;
     model.bio = this.refs.bio.getDOMNode().value;
@@ -946,19 +947,45 @@ var Header = require('../components/header');
 var NavBar = require('../components/nav-bar');
 
 module.exports = React.createClass({displayName: 'exports',
+  getInitialState: function(){
+    return {
+      facebookLink: ''
+    }
+  },
+  facebookLink: function(){
+    window.open(this.state.facebookLink, '_system', 'location=yes');
+  },
   render: function() {
     return (
-      React.DOM.div({className: "login-page"}, 
+      React.DOM.div({className: "profile"}, 
         Header({text: "TRÀ SỮA", back: "true"}), 
 
         React.DOM.div({id: "wrapper"}, 
           React.DOM.div({className: "container"}, 
-            React.DOM.b(null, "Tư Cuồng"), 
-            React.DOM.p(null, React.DOM.small(null, "ĐH Công Nghệ Thông Tin.")), 
+            React.DOM.b(null, "Tư Cuồng"), React.DOM.br(null), 
+            React.DOM.small(null, "Nam - Ma Kết - 18t"), React.DOM.br(null), 
+            React.DOM.small(null, "ĐH Công Nghệ Thông Tin."), React.DOM.br(null), 
             React.DOM.p(null, "Nếu biết tình như thế, chẳng lớn lên làm gì, thà như ngày thơ ấu, hai đứa cầm tay đi, thuở còn thơ ngày 3 cữ là thường.")
+          ), 
+
+          React.DOM.ul({className: "table-view"}, 
+            React.DOM.li({className: "table-view-cell"}, 
+              React.DOM.a({href: "javascript:;", className: "navigate-right", onClick: this.facebookLink}, 
+                React.DOM.small(null, "Facebook link")
+              )
+            ), 
+            React.DOM.li({className: "table-view-cell"}, 
+              React.DOM.a({className: "navigate-right", href: "tel:01643652922"}, 
+                React.DOM.small(null, "Phone: 01643-652-922")
+              )
+            ), 
+            React.DOM.li({className: "table-view-cell"}, 
+              React.DOM.a({href: "mailto:tampham47@live.com", className: "navigate-right"}, 
+                React.DOM.small(null, "Email: tampham47@live.com")
+              )
+            )
           )
         ), 
-
         NavBar(null)
       )
     );

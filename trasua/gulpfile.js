@@ -42,5 +42,5 @@ gulp.task('watch', function() {
   gulp.watch(path.app + '/**/*.*', ['browserify', 'sass', 'copy', 'server']);
 });
 
-gulp.task('default', ['browserify', 'sass', 'copy', 'server','watch']);
+gulp.task('default', ['browserify', 'sass', 'copy', 'server']);
 

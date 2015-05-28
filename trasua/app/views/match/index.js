@@ -18,7 +18,7 @@ module.exports = React.createClass({
                   <img className="media-object pull-left" src="./images/42x42.gif"/>
                   <div className="media-body">
                     <b>Tư Cuồng</b>
-                    <p><small>ĐH Công Nghệ Thông Tin.</small></p>
+                    <p><small>Nam - Ma Kết - 18t</small></p>
                   </div>
                 </a>
               </li>
@@ -27,7 +27,7 @@ module.exports = React.createClass({
                   <img className="media-object pull-left" src="./images/42x42.gif"/>
                   <div className="media-body">
                     <b>Tam Pham</b>
-                    <p><small>ĐH Công Nghệ Thông Tin.</small></p>
+                    <p><small>Nam - Ma Kết - 18t</small></p>
                   </div>
                 </a>
               </li>
@@ -36,7 +36,7 @@ module.exports = React.createClass({
                   <img className="media-object pull-left" src="./images/42x42.gif"/>
                   <div className="media-body">
                     <b>Ngân Nguyễn</b>
-                    <p><small>ĐH Công Nghệ Thông Tin.</small></p>
+                    <p><small>Nam - Ma Kết - 18t</small></p>
                   </div>
                 </a>
               </li>
