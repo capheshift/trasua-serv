@@ -17,6 +17,10 @@ UserSchema = new Schema
   phoneNumber:
     type: String
 
+  zodiac:
+    type: String
+    default: 'SAO'
+
   skype:
     type: String
 
@@ -24,7 +28,7 @@ UserSchema = new Schema
     type: String
 
   birthday:
-    type: Date
+    type: String
 
   school:
     type: String

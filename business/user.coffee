@@ -4,6 +4,10 @@ debug = require('debug')('user-bll')
 User = require '../models/user'
 mongoose = require 'mongoose'
 
+# moment = require 'moment'
+# getZodiac = (birthday) ->
+#   birth = moment(birthday, '')
+
 create = (data) ->
   promise = new mongoose.Promise
   $this = this
