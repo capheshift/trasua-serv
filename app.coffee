@@ -23,7 +23,7 @@ passport.use User.createStrategy()
 passport.serializeUser User.serializeUser()
 passport.deserializeUser User.deserializeUser()
 
-mongoose.connect 'mongodb://localhost/sanji'
+mongoose.connect 'mongodb://tampham47:1we23rw4t@ds043012.mongolab.com:43012/heroku_app37280303'
 
 app.listen 4201
 console.log 'Listening on port 4201...'
